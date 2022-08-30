@@ -1,0 +1,30 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/SEQUENTIAL/clock_gen/clock_gen_100mhz
+vtb
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 R16`PC3QlG0eSjOFV@5TZ1
+IULb_M3@D:Q5YGTC`AP[N62
+R0
+w1658166042
+8clock_100mhz.v
+Fclock_100mhz.v
+L0 1
+OL;L;10.7c;67
+31
+!s108 1658166043.000000
+!s107 clock_100mhz.v|
+!s90 -reportprogress|300|clock_100mhz.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

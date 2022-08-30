@@ -1,0 +1,235 @@
+ses:-
+
+1.
+
+digital - 15
+evaluation test - MCQ - 60%
+
+2.
+
+gvim - 3 to 4
+
+3.
+
+front end 
+	verilog - 90% 	-> 1.5 months
+		BASIC	 -> 80%
+		ADVANCED -> 80%
+			project
+	system verilog - 2 months
+		monitor
+		coverage 
+		reference model and scoreboarding
+		Assertions
+	
+	project - 1 month - 90%
+	unix - 10 days - 80%
+	uvm - 1month 
+	project - 
+	AXI , APB, AHB
+	python
+
+
+
+back end
+	unix - 10  		- 80%
+	cmos - 10  		- 80%
+	tcl - 10 to 15  - 80%
+
+	advance training:-
+		
+		
+VIDEO ACCESS:-
+	7 days
+	
+_____________________________________________________________________________________________________________________
+
+DIGITAL
+
+1. COMBINATIONAL CIRCUITS
+
+	a. number system
+	b. radix format
+	c. compliments[1's , 2's , 9's and 10's]
+	d. Boolean expression representation
+	e. Boolean expression simplification
+	f. gates
+			gates using universal gates
+			gates using mux
+	g. circuits:-
+		mux
+		demux
+		Half adder
+		Full adder
+		Half sub
+		Full sub
+		encoder 
+		priority encoder
+		decoders
+		comparator
+		tri state buffer
+	h. BCD
+	   XS-3
+	   gray code
+
+
+2. SEQUENTIAL CIRCUITS
+	
+	a. intro
+	b. why we need clk and reset
+	c. every hardware is visualized as combinational + sequential 
+	d. latches
+	e. Flip flops
+		Flip flop convertions
+	f. Flip Flip implementation
+		1. using latches
+		2. using mux
+	======================================================================
+	g. counters
+	h. state machines
+	i. frequency division 
+
+_____________________________________________________________________________________________________________________
+	a. number system
+
+		Binary -> 0 or 1 
+			
+		decimal -> 0 to 9
+		hexadecimal -> 0 to 9 and a to f
+							a   b  c  d  e f
+							10 11 12 13 14 15
+		octal
+				-> 0 to 7
+
+
+
+	1. Binary to other number system.
+
+			Q. represent (10010.011)base 2 in ()base 10
+
+					[(1*2**4)+(0*2**3)+(0*2**2)+(1*2**1)+(0*2**0) ].[(0*2**-1) + (1*2**-2) + (1*2**-3)]
+													(16+0+0+2+0) . (0 + 1/4 + 1/8)
+													(18 . 375)base 10
+
+
+			Q. represent (10101.11)base 2 in ()base 10
+					(21 . 75)base 10
+
+
+			Q. represent (10010.011)base 2 in ()base 8
+				2**3 -> 8
+				we need 3 bits to represent octal in binary
+
+					 (010_010.011)base 2
+					      use 421 coading
+
+						  (22.3)base 8
+
+			Q. represent (100001101.01101101)base 2 in ()base 8
+
+					100_001_101.011_011_010
+					(415.332)base 8
+
+			Q. represent (101011101.01101101101)base 2 in ()base 16
+					2**4 -> 16
+						0001_0101_1101.0110_1101_1010
+						1     5    13 . 6    13   10
+						[1     5    D  . 6     D   A]base 16
+
+			Q. represent (11000110110.011011)base 2 in ()base 16
+			0110_0011_0110.0110_1100
+			 [636.6c]base 16
+	
+
+	2. decimal to other number system
+
+			Q. represent (201.21)base 10 in ()base 2
+
+					integral
+						201 -> 11001001 
+
+
+					fractional
+						.21 -> . 001101
+
+						.21 * 2 -> 0.42
+						.42 * 2 -> 0.84
+						.84 * 2 -> 1.68
+						0.68* 2 -> 1.36
+						.36 * 2 -> 0.72
+						.72 * 2 -> 1.44
+
+					(201.21)base 10 in (1101001 . 001101)base 2
+
+			Q. represent (21.13)base 10 in (10101 . 001000)base 2
+
+				fractional
+					.13 * 2 -> 0.26
+					.26 * 2 -> 0.52
+					.52 * 2 -> 1.04
+					.04 * 2 -> 0.08
+					.08 * 2 -> 0.16
+					.16 * 2 -> 0.32
+		
+
+			example for getting repeated values 
+					0.2 * 2 ->0 .4
+					.4 * 2 -> 0.8
+					.8 *2 -> 1.6
+					.6 * 2 -> 1.2 -> stop it till here take the result 
+								-> value is 0011
+					.2 * 2 -> 0.4
+		
+
+
+			Q. represent (132.18)base 10 in ()base 16
+					
+					132 -> (84)base 16
+
+					.18 -> 2 14 1 4 7 10
+						-> (2 E 1 4 7 A)base 16
+
+				(132.18)base 10 in (84 . 2E147A)base 16
+
+
+			Q. represent (122.11)base 10 in ()base 8
+
+					(122.11)base 10 in (172.07024)base 8
+
+
+
+octal to hexadecimal 
+	-> octal -> binary -> hexadecimal
+			Q. represent (741)base 8 to ()base 16
+				-> 741 -> 0001_1110_0001) base 2
+					-> (1E1) base 16
+
+
+hexadecimal to octal 
+	-> hexadecimal -> binary -> octal
+			Q represent (A6F5)base 16 to base 8
+					-> (123365) base 8
+
+_________________________________________________________________________________________________________________________
+
+	Radix format:-
+		binary -> b or B
+		decimal -> d or D
+		octal  -> o or O
+		hexadecimal -> h or H
+
+	syntax:-
+			<size>'<radix_base><value>
+
+	Q. represent value 15 with size 5 in all radix base?
+		value 15
+		size 5
+
+				decimal -> 5'd15; or 15
+				binary  -> 5'b01111 or 5'b1111;
+				octal   -> 5'o17;
+				hexadecimal -> 5'hf;
+
+
+Q hexadecimal value 15 is it same as decimal 15?
+	

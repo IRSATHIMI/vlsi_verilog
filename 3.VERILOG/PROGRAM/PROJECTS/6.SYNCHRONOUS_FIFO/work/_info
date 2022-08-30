@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/PROJECTS/SYNCHRONOUS_FIFO
+vfifo_sync
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 =dXYeezha^Ojz]N2aDGK^3
+IK6`>84]f0ICKZk7oo62fi3
+Z1 de:/STUDIES/VLSI/3.VERILOG/PROGRAM/PROJECTS/SYNCHRONOUS_FIFO
+w1659211903
+8fifo_sync.v
+Ffifo_sync.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1659467281.000000
+Z4 !s107 fifo_sync.v|tb_sync_fifo.v|
+Z5 !s90 -reportprogress|300|tb_sync_fifo.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R0
+r1
+!s85 0
+!i10b 1
+!s100 T<e3LS0bQY<lL9LGl4Wko2
+IAAaE<T`WJfE4>NE^67WKo1
+R1
+w1659467201
+8tb_sync_fifo.v
+Ftb_sync_fifo.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

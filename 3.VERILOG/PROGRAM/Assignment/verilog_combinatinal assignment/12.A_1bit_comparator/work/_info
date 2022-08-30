@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 de:/STUDIES/VLSI/3.VERILOG/PROGRAM/12.1bit_comparator
+vonebitcomp
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 ZXeIDOR_Dn^IeXzM1m:[70
+IWUVM6_GiT<_F2iT:iX>C_3
+R0
+w1657890931
+81bit_compa.v
+F1bit_compa.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1657890997.000000
+Z4 !s107 1bit_compa.v|rb_1bit_comp.v|
+Z5 !s90 -reportprogress|300|rb_1bit_comp.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 BPUn8DdmNG^ZmlNdgZ8MM1
+I=X^YJ4=_zzA<Q>IDGAI:a2
+R0
+w1657890996
+8rb_1bit_comp.v
+Frb_1bit_comp.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

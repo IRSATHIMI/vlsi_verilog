@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/COMBINATIONAL/priorit_ecoder_using_casex
+vpriority_en
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 ]ejmfAbVE12^VBJghNni[2
+Ik5Va0eZ61UMkSSnnEa8oV3
+R0
+w1658655980
+8priority_encod_casex.v
+Fpriority_encod_casex.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1658655982.000000
+Z4 !s107 priority_encod_casex.v|tb_pri_en.v|
+Z5 !s90 -reportprogress|300|tb_pri_en.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 F3@T>FBkKR6L[edTTQ5[;1
+IcLC47]Ki_TL0JAn4L[CkL1
+R0
+w1658655317
+8tb_pri_en.v
+Ftb_pri_en.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

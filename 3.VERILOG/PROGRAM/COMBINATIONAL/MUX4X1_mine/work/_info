@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/STUDIES/VLSI/3.VERILOG/VERILOG_JUN2022/MUX4X1_mine
+vmux_4x1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 =;KFn3WO>L;`Z`EF?VE^c2
+IDzaM3ITRCT]HmDKMAk7fo3
+R0
+w1657358696
+8mux_4x1.v
+Fmux_4x1.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1657359210.000000
+Z4 !s107 mux_4x1.v|tb_mux_4x1.v|
+Z5 !s90 -reportprogress|300|tb_mux_4x1.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 zPg^cCUWZ>:P_>Se8^A3Y3
+IEim_OzYhmhoFImknBdbE^0
+R0
+w1657358393
+8tb_mux_4x1.v
+Ftb_mux_4x1.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

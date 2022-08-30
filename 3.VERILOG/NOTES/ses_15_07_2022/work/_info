@@ -1,0 +1,99 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/VLSIGURU/ThEORY_AND_LAB/3.VERILOG/verilog_JULY/THEORY/ses_15_07_2022
+vtb
+Z1 !s110 1657870481
+!i10b 1
+!s100 5zOC=24PeAE[zb^4W2kX80
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I`3GQ2WbOJ[]bP_QCmC^;22
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1657870476
+8tb.v
+Ftb.v
+!i122 3
+L0 4 14
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1657870480.000000
+!s107 tri_xor.v|tb.v|
+Z6 !s90 -reportprogress|300|tb.v|
+!i113 1
+Z7 tCvgOpt 0
+vtri_xor
+R1
+!i10b 1
+!s100 ]zz0cM:deYY;EHVP:nb[80
+R2
+Izm5E[HDc:bg;6JhY]4E:Z3
+R3
+R0
+w1657870426
+8tri_xor.v
+Ftri_xor.v
+!i122 3
+L0 1 17
+R4
+r1
+!s85 0
+31
+R5
+Z8 !s107 tri_xor.v|tb.v|
+R6
+!i113 1
+R7
+vwand_nature
+!s110 1657869424
+!i10b 1
+!s100 GOK6ZHMQ<d?Pn<ej8L<:b3
+R2
+IAlQ3Zf_ZfM5RI5L4Tkcnh3
+R3
+R0
+w1657869190
+8wand.v
+Fwand.v
+!i122 0
+L0 1 10
+R4
+r1
+!s85 0
+31
+!s108 1657869424.000000
+!s107 wand.v|tb.v|
+R6
+!i113 1
+R7
+vwor_nature
+!s110 1657869706
+!i10b 1
+!s100 A5TNL7mzCl;DL@SL7FP0j0
+R2
+IiMKAK19S7KN8^oBA4PHo72
+R3
+R0
+w1657869704
+8wor.v
+Fwor.v
+!i122 2
+L0 1 11
+R4
+r1
+!s85 0
+31
+!s108 1657869706.000000
+!s107 wor.v|tb.v|
+R6
+!i113 1
+R7

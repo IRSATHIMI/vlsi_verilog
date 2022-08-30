@@ -1,0 +1,225 @@
+ses:-
+date:- 05/07/2022
+
+5. NAVIGATE command
+
+	a. between the lines
+
+		h -> move left
+		j -> move down
+		k -> move up 
+		l -> move right
+
+NOTE:-
+	use h,j,k,l, commands in escape mode without using colon
+
+		or
+
+		use arrow keys
+
+			NOTE:-
+			1. move n line up
+				nk
+				example:-
+					10 line move up
+						-> command inescape mode 
+								10k
+			2. move n lines down	
+				nj
+				example:-
+					10 line move down
+						-> command inescape mode 
+								10j
+
+			3. move to any required line command
+				command:-
+					escape mode
+						:<line_number> and press enter key
+
+					example:
+						move to 5th line of the file
+							:5
+
+	b. navigate between the words
+		-> move one word forward[forward word movement]
+			command:-
+				escape mode
+					w
+
+		-> move one word backward[backward word movement]
+			command:-
+				escape mode
+					b
+
+		-> go to n number of words forward:-
+				nw
+				example:-
+					10w -> move 10words forward
+					5w -> move 5 words forward
+
+
+		-> go to n number of words backward:-
+				nb
+
+	c. navigate between files command	
+		command
+			escape mode
+				ctrlw<use_arrow_keys_to_navigate>
+			example:-
+				ctrlw<right_arrow_key> -> move the cursor to the right side file
+				ctrlw3<right_arrow_key> -> move the cursor to the 3 rd file present in right side
+
+6. copy, paste and cut or delete:-
+
+	a. with respect to lines:-
+		1. copy [yanking]
+			command
+				yy
+	
+			-> one line copy
+					yy
+			-> multiple line copy
+					nyy
+					example:-
+						5yy -> 5 line copy
+
+		2. paste the copied content 
+			comand
+				p
+
+			-> paste for 1 time
+				p
+
+			-> multiple times paste
+				np
+					example:-
+						5p -> 5 times pastes the coped content
+
+		3. delete or cut operation
+			command 
+				dd
+
+			-> one line delete or cut
+				  dd 
+
+			-> multiple line delete or cut
+					ndd
+NOTE:-
+	requirent
+		copy lines from 75 to 107 what is the command?
+
+		command:-
+			:<lower_range_line>,<upper_range_line>y
+
+			escape mode
+				:75,107y
+
+
+NOTE:-
+	suppose if we give commands such as 
+			:<upper_range_line>,<lower_range_line>y
+	tools [gvim] shows a warnning message and ask us-> "backward range is given is it ok to swap(y/n)?_______"	
+
+	b. with respect to words
+		
+		1. copy [yanking]
+			command
+				yw
+	
+			-> one line copy
+					yw
+			-> multiple line copy
+					nyw
+					example:-
+						5yw -> 5 words copy
+
+		2. paste the copied content 
+			comand
+				p
+
+			-> paste for 1 time
+				p
+
+			-> multiple times paste
+				np
+					example:-
+						5p -> 5 times pastes the coped content
+
+		3. delete or cut operation
+			command 
+				dw
+
+			-> one word delete or cut
+				  dw 
+
+			-> multiple word delete or cut
+					ndw
+		
+NOTE:-
+	some related commands:-
+			
+1. to delete a char
+	x -> delete  char right side of cursor 
+	X -> delete  char left side of cursor 
+
+2. replace a char
+	a. go to char which we want to replace
+	b. press "r" in esape mode
+	c. observe your cursor -> cursor changes from rectange box line to underscore[i.e "_"]
+	d. type the new char
+	
+3. search and replace pattern
+	command:-
+		escape mode
+		1.
+		:%s/patten_to_search/new_pattern/g  -> search for the pattern throughout the file and replace with newer pattern throughout the file
+		2.
+		:<lower_range_line>,<upper_range_line>s/patten_to_search/new_pattern/g -> search for the pattern in a given range and replace with newer pattern 
+
+	example:-
+		:%s/verilog/SYSTEM/g
+		:2,6s/verilog/SYSTEM/g
+
+4. gg
+	go to first line or start of file	
+
+5. G
+	go to last line of the file
+
+6. ggVG
+	select all
+
+7. select all and copy
+	ggVGy
+
+8. select all and delete
+	ggVGd
+
+9. undo
+	u
+
+10. redo
+	ctrlr
+
+11. save as command
+		save as -> save existing file with a new name
+
+	method 1:-
+		does the save as operation but will not the open the new file for editing purpose
+		:w <new_filename.extension>
+
+		example:-
+			:w save_as_method_1.txt
+
+	method 2:-
+		does the save as operation but will open the new file for editing purpose
+		:sav <new_filename.extension>
+
+		example:-
+			:sav save_as_method_2.txt
+
+NOTE:-
+	remove highlight
+		:noh
+
+12. vimrc files

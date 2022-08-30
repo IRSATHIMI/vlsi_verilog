@@ -1,0 +1,54 @@
+Explain what is race condition. what is the definition of race condition.
+	ans==>a race condition is a undesirable condition or suituation when a device or system attempts to perform two or more operation at the same time. we cant able to predict the ouptut because practically we cant predict which process which gives the output first that means between the running which will win the race un predictable. based on the winner of the race the output may vary.
+	ex==> if a=10 and b=20
+			am assigning the a=b and b=a at the same we cannot predict whether the a and are updated to 20 or 10.
+			because of the racing condition which statement exceted will make a impact on the output. it may depond the postion of the both those satement.
+			the statement which wins the race is present at the outpu it may be 10 or it may be 20 on both a and b.
+
+2. WHAT IS THE DIFFERANCE BETWEEN THE BLOCKING AND NON-BLOCKING STATEMNT.
+	BLOCKING STATEMENT:
+		blocking staement excecuted immediately when the statement is excetuded it does not wait anthing. it is continous driven assignment when ever the variable in the RHS changes it is updated to the LHS
+		it is used in the combinational circuit where the circuit driven the input connected to its output as soon as it changes.
+	
+	NON-BLOCKING STATEMENT:
+		non-blocking statement is refers with the symbol <=
+	it assign the RHS into LHS after the end of timestep.
+	if am using always @(posedge clk) and use nonbocking
+				a<=0;
+				b<=10;
+				a<=b;
+			the variable a hold the old value of b till the end of this clock then at the posedge the value b is updated and the again a hold previous value of b.
+			whenevr the value of b changes the value of a updated after that clokc cycle onle. till that the new of b is stored in a temp_variable to store the value into the a.
+
+		it is suitable for sequential circuits .
+	
+	NOTE: if the assigment doesnot have the one of the stamenmt's LHS variable at the one of the Statement's RHS. then the blocking and non-blocking statement doesnot have any impact in the output.
+
+4. HOW MANY FF REQU.
+
+		as we are using blocking assignment in the code.
+	all the values are updated immediately and  all the varibles are holing the same value.
+
+	only 1'ff is enough.
+
+5. HOW MANY FF REQU.
+
+		as we are using non-blocking assignment in the code.
+	all the values are updated one after another on ever posedge clk and  all the varibles are holing the different value.
+
+	 3'ff is required.
+
+7.a) if sensitivity list has posedge or negedge then use non-blocking assignment beacuse when we us posedge or negedge as the sensitivity list then it is a sequential circuit .
+	for any sequential circuit the value of one ff is assgined the i/p to other ff's only at the posedge or negedge.
+	so in this case the non-blocking assignment are used.
+
+7.b) if sensitivity list doedn't have posedge or negedge then use blocking assignment beacuse when we use any other than posedge or negedge as the sensitivity list then it is a combinational circuit .
+	for any combinational circuit the value of one variable is assgined the other varible immediately with out waiting for anything.
+	so in this case the blocking assignment are used.
+
+9. in this code the there is no LHS variable are not availableat the RHS of any other statement.
+	so we need 3FF's to store 3 diff. values.
+	using blocking and non-blocking assignment does not make any differance at the output beacuse of the above explained criteria.
+	
+
+

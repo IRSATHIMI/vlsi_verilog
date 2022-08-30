@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/STUDIES/VLSI/3.VERILOG/VERILOG_JUN2022/PROGRAM/8x1_4x1
+vmux
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 ;3>B2P>:XM5G`cH`I4TJV3
+IU6d:l=chZV3;Z2WMVhoID1
+R0
+w1657580256
+Z2 8mux_4x1.v
+Z3 Fmux_4x1.v
+L0 1
+Z4 OL;L;10.7c;67
+31
+!s108 1657580286.000000
+!s107 mux_4x1.v|8x1_4x1.v|tb_mux_8x1.v|
+!s90 -reportprogress|300|tb_mux_8x1.v|
+!i113 0
+Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+vmux_4x1
+R1
+r1
+!s85 0
+!i10b 1
+!s100 T7F`oCY3m`[^=S7l4a[9H1
+IiU6KQ?dE?@gh:6zI6O:7C0
+Z7 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/COMBINATIONAL/6.8x1_4x1
+w1657693243
+R2
+R3
+L0 1
+R4
+31
+Z8 !s108 1658128438.000000
+Z9 !s107 mux_4x1.v|8x1_3_4x1.v|tb_mux_8x1_using3x_4x1.v|
+Z10 !s90 -reportprogress|300|tb_mux_8x1_using3x_4x1.v|
+!i113 0
+R5
+R6
+vmux_8x1
+R1
+r1
+!s85 0
+!i10b 1
+!s100 gl9^ecL^2ANXH2No_5^5E0
+IWgTn<Yg2><JSO47F7@7ZX0
+R7
+w1657989203
+88x1_3_4x1.v
+F8x1_3_4x1.v
+L0 2
+R4
+31
+R8
+R9
+R10
+!i113 0
+R5
+R6
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 =5]kK5hk[GBRoU2i^QkEe0
+IR0D;Jj0KHjZYfLzSiF4Vm0
+R7
+w1657989453
+8tb_mux_8x1_using3x_4x1.v
+Ftb_mux_8x1_using3x_4x1.v
+L0 2
+R4
+31
+R8
+R9
+R10
+!i113 0
+R5
+R6

@@ -1,0 +1,150 @@
+ses:-
+date:- 04/07/2022
+
+o gvim :- 
+aaa
+3 days 
+	labs as well as theory
+
+		95% keyboard
+		5% mouse
+	
+steps to install gvim:-
+1. go to google and search gvim download 
+	https://www.vim.org/download.php#pc
+2. how to open gvim
+		a. create a folder by user defined names
+		b. inside the folder
+				create a text document
+					-> right click -> NEW -> text document 
+		c. right click on text document and choose "edit with vim" option
+
+
+gvim -> graphical visually improved a text editor:
+
+o working with gvim
+	gvim has two modes of operation:-
+	1. escape mode [command mode]
+		why?
+			to execute the gvim provided command we use escape mode
+		how to go to escape mode?
+			press escape key in the keyboard
+		how to identify?
+			see the cursor -> cursor should be in thick black rectangular box and should be blinking
+
+	2. insert mode
+		why?
+			to edit the files 
+		how to go to insert mode?
+			multiple methods
+				press "i" or "o" or "insc key"
+		how to identify?
+			see the cursor -> cursor should be vertical line and blinking
+			or
+			see left bottom of the scrren
+				---INSERT--
+ a. Visual mode
+		Visual block
+		Visual lines
+
+ b. recording mode
+
+o Command in gvim:-
+
+NOTE:-
+	99% of the commands should be types in escape mode
+
+1.a. setting the line numbers:- 
+	 command :-
+		escape mode 
+			:set number 
+			or
+			:se nu
+
+	b. deactivate the line number
+		commmand :-
+			escape mode
+				:set nonumber
+				or
+				:se nonu
+
+2. openning / creating new files in gvim 
+
+NOTE:-
+	GVIM cannot create or edit file_extensions such as .doc , .xlx, .pdf , .ppt
+
+	two methods are available:-
+	a. vertical split window
+			:vspl filename.extension
+
+			here:-
+				vspl -> vertical split
+
+	b. horizontally split window
+		    :spl filename.extension
+
+			here:-
+				spl -> horizontally split
+	example:-
+	1. create a file by name "mux" having extension as ".v" using vertical split command
+			:vspl mux.v
+	2. create a file by name "encoder" having extension as ".txt" using horizontally split command
+			:spl encoder.txt
+
+3. syntax highlighting:-
+	all the programming file(.v or .sv or .v or .py or .tcl) have inbuilt syntax which gets highlighted in gvim
+
+	example:-
+		verilog files
+
+		comments -> blue color
+		keywords -> reddish brown color
+		numbers and capital letters -> pink color
+		non-keywords -> black color
+
+		a. activate syntax in programming files:-
+			:syntax on
+
+		b. de-activate syntax in programming files:-
+			:syntax off
+
+4. save , quit commands
+
+	a. save :-
+		-> save one file
+				:w 
+					w-> write to memory
+		-> save multiple file at once
+				:wa
+					wa-> write all
+
+		-> forefully save files 
+			below command is used when file is opened in read only mode
+				:w!
+					!-> overriding
+					w! -> override and save
+
+	b. quit files:-   
+		-> quit one file
+			:q
+				q-> quit
+
+		-> quit multiple files
+			:qa
+				qa -> quit all
+
+		-> forefully quit files
+			:q!
+			[dont save just quit]
+
+		-> save and quit
+			:wq
+				wq-> save and quit
+
+		-> save and quit all
+			:wqa
+
+
+
+
+

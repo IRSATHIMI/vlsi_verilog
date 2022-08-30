@@ -1,0 +1,129 @@
+ses:-
+date:- 15/06/2022
+
+o radix format
+
+	<size>'<radix_base><value>
+
+
+Q. represent value 355 with size 11 in all radix base?
+		BINARY -> 11'b001_0110_0011
+		DECIMAL-> 11'd355  or 355
+		OCTAL  -> 11'o543
+		HEXADECIMAL -> 11'h163
+
+Q. represent value 145 with size 8 in all radix base?
+		BINARY -> 8'b1001_0001
+		DECIMAL->8'd145 or 145
+		OCTAL  ->8'o221
+		HEXADECIMAL -> 8'h91
+
+Q. represent value 122 with size 9 in all radix base?
+		BINARY -> 9'b111_1010
+		DECIMAL-> 9'd122 or 122
+		OCTAL  -> 9'o172
+		HEXADECIMAL -> 9'h7A or 9'h7a
+
+
+NOTE:-
+	12.142
+	fractional numbers cant be represented in radix format
+
+Q. MAPPING hexa and octal numbers in binary
+
+	x -> 
+	z ->
+
+_________________________________________________________________________________________________________________________
+o signed and unsigned:-
+
+
+signed numbers:-
+
+	to represent a "-" number in binary we have to do 1's compliments  or 2's compliments. the MSB position will will added with "1"
+
+	a= -5
+
+	either 1's complimentsor 2's compliments
+
+Q> represent a= -5 with size 6 in binary
+
+		5 -> 101
+		1's compliments -> [1]010
+					
+							111010
+
+		2's compliments 
+			-> 1's compliments + 1
+					101 -> 5
+
+				   1010 -> 1's compliments
+				     +1
+			________________________________
+				 111011
+
+					
+unsigned number?
+		a = 5
+
+		MSb bits will be extended by 0
+
+Q> represent value of 5 in 6 bits?
+	
+		a= 101
+		a= 000101
+
+Q. represent value a3 a2 a1 a0 with 8 bit equavalent?
+		-> 0000_a3a2a1a0
+
+
+
+
+
+Q. represent 4 bit 2'compliments value a3 a2 a1 a0 with 8 bit equavalent?
+		-> a3 a3 a3 a3_a3 a2 a1 a0
+
+		why 1111_a3a2a1a0 this is wrong?
+			a3a2a1a0 its a 2's compliment number
+				a3 =1
+
+Q. represent value -12 in binary using 2's compliment ?
+	
+		12 -> 1100
+
+		-12 -> 10011 -> 1's compliment
+		2's compliment -> 1's compliment + 1
+						-> 10011
+							  +1
+					________________________
+						   1 0  1  0  0
+						  a4 a3 a2 a1 a0 -> 2's compliment form
+
+						  the above line represent in 8 bit equivalent
+						a4 a4 a4 a4 _a3 a2 a1 a0 -> 2's compliment form
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+___________________________________________________________________________________________________
+
+Q. 155 - 72 using 1's compliments:-

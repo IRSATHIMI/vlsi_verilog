@@ -1,0 +1,92 @@
+RULES to check 1's compliment:-
+
+	Case 1:- Both are positive number
+	-> no need to do complement
+	-> add both of them keep carry as it is.
+
+	Case 2:- if we have used compliment for either of subtrahend or minuend
+	-> if there is no carry in the result
+		 -> check for MSB bit of the result after addition
+		           - if it is ‘1’, number is –ve, then do 1’s compliment, keep –ve sign
+		           - if it is ‘0’, number is +ve , then don’t take compliment, result is +ve
+	-> if there is a carry in the result
+		-> add carry to final result 	
+
+	Case 3:- If we have used complement for both the minuend and subtrahend 
+	-> Result is always negative signed.
+		-> add carry
+		-> then do 1s complement
+
+
+
+
+
+ 2's compliment rule
+RULES:-
+Case 1:- Both are positive number
+	-> no need to do complement
+	-> add both of them keep carry as it is.
+
+Case 2:- if we have used compliment for either of subtrahend or minuend
+	-> if there is no carry in the result
+		 -> check for MSB bit of the result
+		           - if it is ‘1’, number is –ve, then do 2’s compliment, keep –ve sign
+		           - if it is ‘0’, number is +ve , then don’t take compliment, result is +ve
+	-> if there is a carry in the result
+		->ignore carry to final result 	
+
+Case 3:- If we have used complement for both the minuend and subtrahend 
+	-> Result is always negative signed.
+		->ignore carry
+		-> then do 2s complement
+
+
+o RULES FOR 9's COMPLIMENT
+
+case 1:- Both are positive 
+		no need of compliment
+		just add them
+		keep carry as it is
+
+case 2:- if we have used complement in any of the number
+		-> if there is no carry in result, then my number is -ve
+			-> we have to take 9's compliment of the res and keep the -ve sign
+
+		-> if carry is there
+				add carry to the result and rsult will be +ve sign.
+
+
+case 3:- if we have done compliment for both numbers
+
+			-> result is -ve
+			->if carry is there add carry to the number 
+					take the 9's compliment of the number keep the -ve sign
+
+
+		
+10's compliment:-
+	9's compliment +1
+
+RULE:-
+
+case 1:- Both are positive 
+		no need of compliment
+		just add them
+		keep carry as it is
+
+case 2:- if we have used complement in any of the number
+		-> if there is no carry in result, then my number is -ve
+			-> we have to take 10's compliment of the res and keep the -ve sign
+
+		-> if carry is there
+				ignore the carry and rsult will be +ve sign.
+
+case 3:- if we have done compliment for both numbers
+
+			-> result is -ve
+			->if carry is there
+					ignore it
+					take the 10's compliment of the number keep the -ve sign
+
+		-> if not carry generated after adding
+

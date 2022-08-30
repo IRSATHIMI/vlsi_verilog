@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/STUDIES/VLSI/3.VERILOG/VERILOG_JUN2022/FULL_ADDER/4bit_fulladder
+vbitadder
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 ?NZhOJYH5S8Rh=4Y3g?fh0
+IKbh1V>hMb[]OKZfm6oizB0
+R0
+w1657523255
+84bitadd_fa.v
+F4bitadd_fa.v
+L0 2
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1657525272.000000
+Z4 !s107 fulladder.v|4bitadd_fa.v|tb_4bfa.v|
+Z5 !s90 -reportprogress|300|tb_4bfa.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vfa
+R1
+r1
+!s85 0
+!i10b 1
+!s100 ^GMfGNB<25z4D41P`nOW]2
+I4<a3?5ek37GeUhcBX9Fno0
+R0
+w1657522497
+8fulladder.v
+Ffulladder.v
+L0 1
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 21]DmchQTVbQ_Ja0jI<YM3
+I3U>L@?`Rl8]RWZSVEFPe<1
+R0
+w1657523906
+8tb_4bfa.v
+Ftb_4bfa.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

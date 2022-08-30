@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/STUDIES/VLSI/3.VERILOG/VERILOG_JUN2022/HALF_ADDER
+vhalfadder
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 @mMDePgC<naQYdSeIhe=O2
+IZH0CWM:3O3EFBTLE5kA<Y2
+R0
+w1657362034
+8HALFADDER_DATAFLOW1.v
+FHALFADDER_DATAFLOW1.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1657362043.000000
+Z4 !s107 HALFADDER_DATAFLOW1.v|tb_halfadder.v|
+Z5 !s90 -reportprogress|300|tb_halfadder.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 SY;H>e@IRJTm=[dJ:llBb1
+IP;njKZC]]2lJVP1e=01Go1
+R0
+w1657361994
+8tb_halfadder.v
+Ftb_halfadder.v
+L0 3
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

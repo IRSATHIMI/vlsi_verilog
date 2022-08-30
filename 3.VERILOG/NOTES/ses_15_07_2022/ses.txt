@@ -1,0 +1,213 @@
+ses:-
+date:- 15/07/2022
+
+o how to write a verilog code using behavioural style, gate level, data flow?
+o writing tb
+o simulating the codes in modelsim/questasim/eda playground.
+
+o Agenda 
+	Literals in verilog
+		datatypes
+	Hardware connection types
+	vector
+	arrays
+
+o Literals in verilog:-
+	what are literals?
+		rules that are to be to be followed during assigning values to a variable.
+
+	1. integer:-
+		integer is a onr of thr datatype in verilog, which can store 32 bit data size
+		integer is a reg based variable.
+
+		how to declare a variable by integer?
+			interger var_name;
+
+		format specifier for display the value of interger ?
+			%d -> integer / decimal
+			%h -> hexadecimal
+			%b -> binary
+			%o -> octal
+			%f -> real datatypes
+
+		Q. how to assign hexadecimal, octal , binary values to a variable?
+				hexadecimal -> i want to assign "f" to a variable "a"
+				we have to use radiz format to indicate to the tool that we are giving hexadecimal, binary or octal values?
+
+		Q. What is Radix format? how to represent them?
+			syntax:-
+				var_name = <size>'<radix_base><value>
+			hexadecimal -> i want to assign "f" to a variable "a"
+				a=32'hf;
+					-> 32'hf does not mean that we are having 32 times "f" 
+			octal -> i want to store value as "17" to variable "a"
+				a=32'o17;
+
+		Q. why we need radix format?
+			during write or read operation to a memory we have to access address locations these address locations are generally defined using hexadecimal format.
+
+			to addr = 32'h123; we have generate a test case which does both write and read operation .
+			during this if at all the developer is not aware of radix convestion he will end up doing write and reas operation to a different location.
+
+
+	2. string:-
+			what is string in c language?
+			string name = "vlsiguru"
+			each char in string is stored in ASCII format
+				ASCII values is of 8 bit or 1 byte	
+			but?
+				in verilog we dont have concept as string
+
+				how do we declare strings?
+					we use reg based datatypes?
+						because we need to store the values
+				how to declare string using reg datatypes?
+					reg [8*n:1] name;
+							8-> each char take 8 bits
+							n -> number of char we want to store
+							8*n -> will give you total nuber of bits required
+					example:-
+						i want to store the string "vlsiguru"
+								there are 8 chars each char needs 8 bits
+									so intotal we need 8*8 -> 64 bits
+								how to clare this 64 bits using reg datatypes?
+									1. reg [63:0] name; -> this is also corrct 
+									2. reg [8*8:1] name; -> this approch is preferred
+
+						Q. sir why are we not taking 
+									2. reg [8*8:0] name; -> this approch is wrong
+										here total there will be 65 locations
+											to store 8 char i need only 64 locations
+												were one additional locations that is 65th location in wasted 
+
+			o to stor char in register we have to declare the chars inside double quotes
+				i.e name ="vlsiguru"; here vlsiguru is stores in name variable as string
+
+				suppose 
+					name =vlsiguru; here vlsiguru is treared as a different variable.
+
+
+		o in verilog we gave a concept called as vector slicing?
+			what is slicing?
+		
+				string rules:-
+					1. declare string using reg datatypes
+						reg [8*n:1] var_name;
+				    2. during string assignment we have to use double quotes.
+					3. to display the string we have to use %s format specifier
+		
+				o concept of string its a verilog important in terms on generating different test cased in tb development.
+		
+		o how concept of string is important?
+				we use concept of $value$plusargs?
+					what is this?
+						in c program there is a concept called scanf(); statement 
+						it a method were user passes testcases to execute a set of operation.
+		
+						use in the ellaboration command passes the vale using +testcase=idle
+							
+		Q. is $vale$plusargs used only on string ?
+			can i use for integer ?
+				yes
+				insted of %s use %d
+										
+	3. real
+		literal rules
+			real b;
+
+			if we want to assign values to "b" variable
+
+			b=3.142;//this is correct
+
+			b=3142;//this is not real type
+			b=3,142;//this is wrong
+
+	NOTE:-
+		there is not dataype called as int
+		verilog has integer datatypes
+
+
+	verilog has values set :-
+
+	1. 0
+	2. 1
+	3. x
+		red line in wave form
+		a=`bx; -> correct
+		a=x; -> wrong
+	4. z
+		blue line in waveform
+		a=`bz; 
+
+	note :-
+		during radix format if we dont declare size it take the default size of variable datatype
+
+	reg [4:0] a;
+	
+	a='b100;   =>  a=5'b100;
+
+	NOTE:-
+		x and z 
+		i.e concept of unkown state and high impedence state is present only during simulation
+
+o HARDWARE CONNECTION:-	
+
+	2 types:-
+	1. NET type
+			for continuously driven ports.
+
+			NET is of 4 types:-
+			a. wand
+				wired and nature
+			b. wor
+				wired or nature
+			c. tri
+				tri -> tri state buffer
+				controlled wire nature 
+				we have 3 states 
+					high
+					low
+					high impedence 
+			d. wire  
+	2. REG type
+			for discreltely driving thr ports.
+
+
+o conditonal operator
+	 out = <exp> ? true : false;
+	out = (a == 10) ? 10 : 20;
+	in testbench i will pass value of "a" as 10
+		out = 10
+	in testbench i will pass value of "a" as 1
+	 out = 20
+	 conditonal operator and if -else statemnt both are same in operation
+	 only difference is we can use conditonal operation outside procedural blocks using assign key word
+	 were as if -else statement should be used inside procedural blocks
+
+
+summary:-
+1 literals rules
+    for integer, string, real
+2 what is integer datatype,
+3 what is string datatype,
+4 what is radix format ? how it is important
+5 use of $value$plusargs?
+6 using $value$plusargs how to generate different testcases?
+7 in brief we learnt regarding vector slicing?
+8 set up time and hold time?
+9 need for x and z in simulation?
+10 net and reg types
+11 different types of net ? were to use ?
+12 conditonal operator?
+____________________________________________________________________________________________________________
+tmrw agenda:-
+
+o reg 
+o vectors
+o $time $realtime
+o real
+
+
+
+
+

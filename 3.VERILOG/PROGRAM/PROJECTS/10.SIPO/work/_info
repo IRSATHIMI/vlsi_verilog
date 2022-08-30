@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/PROJECTS/SIPO
+vfifo_async
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 C]><RSQ?>VkW:0XOE>[280
+I6D2DhZ@UScje0ae@S_2M<1
+Z1 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/PROJECTS/10.SIPO
+w1660981896
+8fifo_async.v
+Ffifo_async.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1661115529.000000
+Z4 !s107 fifo_async.v|sipo_design.v|tb_sipo.v|
+Z5 !s90 -reportprogress|300|tb_sipo.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vsipo_design
+R0
+r1
+!s85 0
+!i10b 1
+!s100 >M2IZUJoT2`f9CIKEkYBa2
+ISR?gL<e@HSJ?2m`]ZDQc?3
+R1
+w1660983413
+8sipo_design.v
+Fsipo_design.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7
+vtb
+R0
+r1
+!s85 0
+!i10b 1
+!s100 G<:G_KP>]LgE]QmD;;6M:1
+IgRTnndb8BECWdnc6[<iIo2
+R1
+w1660990300
+8tb_sipo.v
+Ftb_sipo.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

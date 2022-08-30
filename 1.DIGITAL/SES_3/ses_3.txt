@@ -1,0 +1,244 @@
+ses 3:-
+date:- 16/06/2022
+
+o compliments:-
+
+why we use compliments?
+signed number (-ve) what is the signed bit extension?
+unsigned number what is the MSB bit extension?
+how 1's compliments is done?
+how 2's compliments is done?
+
+o 1's compliments and 2's compliments:-
+
+subtraction:-
+
+1Q. 155 - 72.
+
+convert 155 and 72 into binary
+	155 -> 1001_1011
+	72  ->  100_1000
+
+get the 1's compliments of 72
+	72  ->  100_1000
+	-72 ->   1011_0111
+
+
+add both the values
+	155 -> 1001_1011
+	-72 -> 1011_0111
+	add
+	_________________________
+		[1]0101_0010  -> result
+
+			0101_0010
+				   +1
+	________________________
+	        0101_0011 -> 83 -> checking result
+			128 64 32 16 8 4 2 1
+			 0   1 0  1  0 0 1 1
+
+Q. 132 - 55
+
+	-> [1]01001100  -> result
+
+Q. 62 - 122
+
+62 ->   11_1110
+122 -> 111_1010
+
+1's compliments of 122 -> 1000_0101
+
+	  0011_1110
+	  1000_0101
+	 __________
+	  1100_0011
+
+		-> if there is no carry in the result
+		 -> check for MSB bit of the result after addition
+		           - if it is ‘1’, number is –ve, then do 1’s compliment, keep –ve sign
+		           - if it is ‘0’, number is +ve , then don’t take compliment, result is +ve
+
+	MSB is 1
+		we have to do 1's compliment
+				1100_0011
+			->  0011_1100
+			- 60
+
+Q. -222 - 105
+
+222 -> 1101_1110
+105 ->  110_1001
+
+-222 -> 10010_0001
+-105 -> 11001_0110
+take 1's compliment for both numbers
+		10010_0001
+		11001_0110
+___________________________
+	 [1]01011_0111  
+
+	Case 3:- If we have used complement for both the minuend and subtrahend 
+	-> Result is always negative signed.
+		-> add carry
+		-> then do 1s complement
+
+01011_0111  
++		 1
+________________
+01011_1000
+
+ do 1's complement
+
+1_0100_0111
+256 + 64 + 4+2+1
+-> - 327
+
+o 2's complement:-
+subtraction
+
+Q. 155 - 132
+
+
+132 -> 1000_0100
+2's complement
+	1's complement -> 10111_1011
+	+1
+				   -> 10111_1100
+
+	155-> 01001_1011
+	   -> 10111_1100
+	 ____________________
+	   [1]00001_0111
+
+	ignoring carry
+		00001_0111 -> 23
+
+Q. 62 - 257
+
+257 -> 1_0000_0001
+
+2's compliment 
+
+257 -> 10_1111_1111
+62  -> 00_0011_1110
+_______________________
+	   11_0011_1101
+
+11_0011_1101 -> no carry
+take 2's compliment
+00_1100_0011 -> result
+
+
+Q. 2 numbers given in 2's compliment form -> 1010 and 1110 add the number and give the result in 2's compliment form?
+
+
+Q. -222 - 105
+2's compliment
+222 -> 1101_1110
+105 ->  110_1001
+
+Case 3:- If we have used complement for both the minuend and subtrahend 
+	-> Result is always negative signed.
+		->ignore carry
+		-> then do 2s complement
+222 -> 1101_1110
+2's complement
+	   1_0010_0010
+105 ->   110_1001
+2's complement
+		1001_0111
+
+	   1_0010_0010
+	   1_1001_0111
+	________________
+	[1]0_1011_1001 -> additon result
+
+	ignore carry in 2's complement
+	0_1011_1001
+	take 2's complement
+
+	1_0100_0111 -> result
+
+ASSIGNMENT:-
+Q. represent -45 in 8'bit 2's complement format?
+
+o 9's complement and 10's complement
+		
+	9's complement method
+		9 - decicimal digit
+Q. what is 9's complement subtraction of 355 - 245
+
+Ans:-
+			-245 -> 9's complement -> 999
+									  245
+									 _____
+									 9754
+
+		   0355
+		   9754
+		  _______
+		[1]0109
+
+case 2:- if we have used complement in any of the number
+		-> if there is no carry in result, then my number is -ve
+			-> we have to take 9's compliment of the res and keep the -ve sign
+
+		-> if carry is there
+				add carry to the result and rsult will be +ve sign.
+
+	
+	--> there in carry after additon
+			add this carry
+				0109
+				  +1
+			____________
+			    0110
+
+Q. -513 -211
+	9's compliment
+
+	-513 -> 9486
+	-211 -> 9788
+	______________
+	     [1]9274 -> additon result
+
+		 	adding carry 
+				-> 9275
+						9999
+						9275
+				_________________
+						0724
+
+				do 9's compliment
+				-> - 724
+
+10's compliment:-
+	9's compliment +1
+
+Q. 156 - 455
+
+	-455 -> 9544 -> 9's compliment
+			  +1
+		____________
+			9545 -> 10's compliment
+
+				9545
+				0156
+			____________
+				9701
+
+				take the 10's compliment of 9701 
+					10's compliment:-
+						9's compliment +1
+						
+						9999
+						9701
+					____________
+						0298
+
+						->   0298+1 -> 0299 -> 10's compliment
+
+ASSIGNMENT
+Q. -543 -124 in 10's compliment
+Q, 876 - 650 in 10's compliment

@@ -1,0 +1,109 @@
+Digital
+Gvim
+
+Plan:
+	- Verilog:   (Modelsim)
+		Language: 3-4 weeks
+		Project: 3 weeks
+	- SV language (Questasim)
+		7 weeks
+	- UVM
+		4 weeks
+		AHB project
+	- Projects
+		AXI project
+		Ethernet MAC 
+
+Verilog:
+	o 1 week of training combinatiional logic
+	o 2 -3 weeks on sequential logic
+
+Notes:
+1. I want to develop a mobile phone chip
+	- manually come up with 100 crore transistors => start connecting them manyally => this is ruled out.
+
+2. what is high level description?
+   what is low level description?
+
+3. Mod-6 counter
+	we want to fabricate a chip which behaves like mod-6 counter
+
+4. what is low level description?
+	o come up with design in terms of gates.
+
+
+gates <--- boolean expression <---- k-maps <---- Truth table <--- design behavor
+
+C2  C1  C0     N2  N1  N0	D2   D1   D0
+-----------------------------------------
+0   0   0      0   0   1    0    0     1
+0   0   1      0   1   0    0    1     0
+0   1   0      0   1   1    0    1     1
+0   1   1      1   0   0    1    0     0
+1   0   0      1   0   1    1    0     1
+1   0   1      0   0   0    0    0     0
+
+Kmaps: D2, D1, D0
+D2 = C2~C0 | C1C0
+D1 = C1~C0 | ~C2~C1C0
+D0 = ~C0
+
+5. Any design can be implemented in two ways
+	o high level description => more like writing Engligh
+	o low level description => 
+		- truth tbale -> k-maps -> boolean expression => FFs, gates
+
+6. 100% of time(always), we will prefet high level description only.
+
+7. why then, low level description is required?
+	high level description --->  low level description -> chip get manufactured
+		o EDA tools are important.
+		o Synthesis tools(Design compiler, Genus)
+
+8. Verilog has 4 styles of coding
+	o behavioral style
+		o preferred for sequential logic
+		o always
+	o data flow style
+		o preferred for combinational logic
+		o assign
+	o structural style
+		o using logic gates
+		o other smaller modules to implement bigger modules
+	o switch level
+		o using nmos, pmos switches
+
+9. examples
+	o mux
+	o half adder
+	o full adder
+	o subtractor
+	o decoder
+	o encoder
+	o comparator
+	o demux
+	o priority encoder
+	o multiplier
+
+10. mux
+	o 2x1 mux, 4x1 mux, 8x1 mux
+	o 3x1 mux
+
+11Q.
+inside and gate you write (o/p, i/p) but generally we write (i/p,o/p) is there any format  for that
+
+12Q.  why are writing 2’bxx instead we can write 2bxx (why are u using tick)
+
+120KM
+KM120 => not a dsitance convention
+
+13.
+{i0, i1, i2, i3, sel} = $random; //$rnaodm generates a 32 bit random value
+		= 32'b1010_1110_1010_0000_1100_1111_1010_1110;
+
+next iteration
+{i0, i1, i2, i3, sel} = $random; //$rnaodm generates a 32 bit random value
+		= 32'b1110_1110_1010_0000_1100_1111_1111_0011;
+
+sel = $random; //$rnaodm generates a 32 bit random value
+		= 32'b1110_1110_1010_0000_1100_1111_1111_0011;

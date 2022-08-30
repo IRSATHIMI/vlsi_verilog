@@ -1,0 +1,129 @@
+ses:-
+date:- 12/07/2022
+
+1. 2x1 mux
+	beh, gatelevel, datalevel
+
+2. 4x1 mux
+	beh, gatelevel, datalevel
+
+3. Half Adder
+	beh, gatelevel, datalevel
+
+4. Full Adder
+	beh, gatelevel, datalevel
+
+5. fulladder using half adder
+
+  - come up with the circuit
+
+ Q. what is the need for testbench?
+
+//concatination
+// given by {var1,var2 and so on...}
+// combines two or more variable values
+
+	{a_tb,b_tb,cin_tb}=3'b001;
+		0  0     1
+	
+	ra_tb,b_tb,cin_tb}=$random;
+	{a_tb,b_tb,cin_tb}=32'b1001_0011_1001_0011_1001_0011_1001_0011;
+     0     1    1
+
+	$random?
+		generates 32 bit signed random values
+		this random generation depends on tool
+
+steps for simulation:-
+1. create work library
+	is done only once for a project
+    a. vlib work
+
+	b. user provided work lib name
+		vlib user_defined_lib_name
+
+		we have to do mapping
+			vmap work user_defined_lib_name
+
+2. do run.do
+	a. compilation
+		check syntax and convertes the verilog files into object files
+			
+			vlog testbench_file_name.ext
+
+	b. ellaboration
+		comes up with the structure of the code 
+
+		vsim top_most_module_name
+
+	c. add wave 
+		for debugging
+		add wave *
+
+	d. simulation 
+		run -all
+
+Q. seed	
+	used for randomization
+	if we require different set of inputs to be generated during different simulations runs we use seed
+
+
+o below logic is implemened for eda play ground only for getting wave form 
+	initial begin
+	  $dumpvars;
+	  $dumpfile("test.vcd");
+	end
+
+6. 1-bit comparator:-
+	using behavioural style, data flow and gate level
+	truth table
+		A B A<B A>B A==B
+		0 0  0   0   1
+		0 1  1   0   0
+		1 0  0   1   0
+		1 1  0   0   1
+		behavioural style
+		input a,b;
+		output reg L,G,E;
+			always@(*)begin
+				//if else statement
+				if(a==0 && b==1) begin
+					L=1;
+					G=0;
+					E=0;
+				end
+				else if(a==1 && b==0) begin
+					L=0;
+					G=1;
+					E=0;
+				end
+				else begin
+					L=0;
+					G=0;
+					E=1;
+				end
+			end
+
+		data flow
+			assign statement greater 
+			assign statement lesser
+			assign statement equal
+
+		gate level
+			xnor
+			2 and gates
+			2 not gates
+7. decoder 
+		assign q0 = ~a & ~b;
+		assign q1 = ~a & b;
+		assign q2 = a & ~b;
+		assign q3 = a & b;
+
+BELOW 8 to 13 questions implement only structural method
+8. and gate using 2x1 mux
+9. xor gate using 2x1 mux
+10. xnor gate using 2x1 mux
+11. nand gate using 2x1 mux
+12. nor gate using 2x1 mux
+13. or gate using 2x1 mux
+

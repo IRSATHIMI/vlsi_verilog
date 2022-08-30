@@ -1,0 +1,2 @@
+1. List down compile, elaborate, simualtion, log, wave commands for VCS, NCSIM tools
+2. write example for relation operator

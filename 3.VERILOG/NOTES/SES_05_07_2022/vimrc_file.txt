@@ -1,0 +1,9 @@
+set hlsearch
+set backspace=indent,eol,start
+set guifont=Consolas:h14 
+syntax on
+set incsearch
+set tabstop=4
+set showmode
+set autoindent
+set nu

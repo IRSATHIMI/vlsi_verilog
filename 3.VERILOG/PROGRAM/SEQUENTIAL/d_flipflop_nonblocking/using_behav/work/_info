@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/SEQUENTIAL/d_flipflop_nonblocking/using_behav
+vdff
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 faZH[iAS939ndT;CEdcG_1
+IPje3S@NC^][>mCY6=ijoe2
+R0
+w1658817887
+8d_ff_behav_nonblock.v
+Fd_ff_behav_nonblock.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1659188932.000000
+Z4 !s107 d_ff_behav_nonblock.v|tb_dff_behav_nonblock.v|
+Z5 !s90 -reportprogress|300|tb_dff_behav_nonblock.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 <UO`8233152HiAEh<0V=C3
+Io_XSk[BHF>8GL;WERgkBn3
+R0
+w1658817901
+8tb_dff_behav_nonblock.v
+Ftb_dff_behav_nonblock.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

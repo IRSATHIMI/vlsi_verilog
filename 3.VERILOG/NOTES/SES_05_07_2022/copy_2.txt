@@ -1,0 +1,32 @@
+ses:-
+date:- 06/07/2022
+
+o search and replace:-
+
+example:
+	Q. search hardware word and replace with software using search and replaace command in gvim
+
+		am i doing the operation for entire file
+		or 
+		am i doing the operation for specific range of line
+	
+		command :-
+			i doing the operation for entire file
+				:%s/Hardware/Software/g
+			i doing the operation for specific range of line
+				:3,8s/Hardware/Software/g
+	
+	Q. search for "(" and replace with "["
+		command :-
+			:21,31s/(/[/g
+
+		
+o save as command 
+	example:-
+		Q. save the current file as copy.txt 
+			:w copy_1.txt
+			or
+			:sav copy_2.txt
+o navigation between files
+
+

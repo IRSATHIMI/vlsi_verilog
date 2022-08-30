@@ -1,0 +1,44 @@
+module top_e;  //top most module is what holds complete evnironment components
+   reg [3:0] a,b;
+   reg c;
+   initial begin
+	   b = 4'b1010;
+	   a = 4'b101x;
+	   c = (a == b);
+	   $display("a == b : a = %b, b = %b, c = %b", a, b, c);  //one time print
+
+	   b = 4'b101x;
+	   a = 4'b1010;
+	   c = (a == b);
+	   $display("a == b : a = %b, b = %b, c = %b", a, b, c);  //one time print
+
+	   b = 4'b101x;
+	   a = 4'b101x;
+	   c = (a == b);
+	   $display("a == b : a = %b, b = %b, c = %b", a, b, c);  //one time print
+
+	   b = 4'b101x;
+	   a = 4'b101x;
+	   c = (a === b);
+	   $display("a === b : a = %b, b = %b, c = %b", a, b, c);  //one time print
+
+	   b = 4'bz01x;
+	   a = 4'b101x;
+	   c = (a === b);
+	   $display("a === b : a = %b, b = %b, c = %b", a, b, c);  //one time print
+
+	   b = 4'bz01x;
+	   a = 4'bz01x;
+	   c = (a === b);
+	   $display("a === b : a = %b, b = %b, c = %b", a, b, c);  //one time print
+
+	   b = 4'bz01x;
+	   a = 4'bz01x;
+	   c = (a !== b);
+	   $display("a !== b : a = %b, b = %b, c = %b", a, b, c);  //one time print
+   end
+endmodule
+
+
+
+

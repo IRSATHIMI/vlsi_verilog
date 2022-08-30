@@ -1,0 +1,148 @@
+ses:-
+date:- 14/07/2022
+
+o not gate using 2x1 mux.
+o what is ment by %t format specifer
+-> we have to use $time system task in verilog
+	$time returns the simulation time in integer format
+	to display display thsi $time value we use %t format specifier
+	
+o Why the display monitor working only inside a block
+-> Guideline
+	any functionality of a block if we want to implement it should by inside procedural blocks.
+	calling a task or a function is also a kind implementing functionality.
+ 
+o instantiation of gate is not a function
+	it is a way of declaring a design inside a module.
+
+NOTE:-
+	 thingd done outside procedural blocks
+		o declaring gates or design instnce
+		o declaring defination for a function/task
+		o declaring variables
+
+     things done inside procedural blocks
+	 	o using procedural statements
+			i.e if-else
+			    while
+				for
+				repar
+				case
+				etc...
+		o assigning a value to a variable using blocking or non blocking statements
+			[i am not referring to using assign statements]
+			[i am referring to lhs = rhs; i.e a=10;  b= 20]
+		o calling functions/ task
+		
+Q. sir, please tell dataflow method for encoder I didnt understood how to assign the values.
+
+-> using assign statements
+	2x4 decoder 
+	inputs i0,i1;
+	outputs y0,y1,y2,y3;
+
+	expression -> y0 = i1'i0'
+	expression -> y1 = i1'i0
+	expression -> y2 = i1 i0'
+	expression -> y3 = i1 i0
+
+	assign y0 = ~i1 & ~i0;
+	assign y1 = ~i1 & i0;
+	assign y2 = i1 & ~i0;
+	assign y3 = i1 & i0;
+
+4x2 encoder
+	
+	outputs y0,y1;
+	inputs i0,i1,i2,i3;
+
+	expression -> y0 = i3+i2
+	expression -> y1 = i3+i1
+
+	assign y0 = i3 | i2;
+	assign y1 = i3 | i1;
+
+Q. 
+sir can you please explain 8x1 mux tb, i didnt understand the left shift concept
+
+-> module tb;
+	reg [7:0]in;
+	reg [2:0]sel;
+	wire out;
+	reg [7:0] temp_var;	
+	integer i;
+
+	//instace
+	initila begin
+		temp_var = 8'b0000_0001;
+		for(i=0;i<8;i=i+1) begin
+			sel = $random;//is sel is a 3 bit variable sel values can rage from 0 to 7
+			in=temp_var;	
+			temp_var = temp_var << 1;
+			#10;
+			$display();
+		end
+	end
+	endmodule
+
+//temp_var = 8'b0000_0001;
+//i=0
+//sel = 000
+//in = 8'b0000_0001;
+//temp_var = temp_var << 1; -> 8'b0000_0010;
+//#10;
+//display
+//
+//i=1
+//sel=7
+//in = 8'b0000_0010;
+//temp_var = temp_var << 1; -> 8'b0000_0100;
+//#10;
+//display
+//
+//i=2
+//sel=4
+//in = 8'b0000_0100;
+//temp_var = temp_var << 1; -> 8'b0000_1000;
+//#10;
+//display
+//
+//and so on.. til i=7
+//i=0 -> in= 1
+//i=1 -> in= 2
+//i=2 -> in= 4
+//i=3 -> in= 8
+//i=4 -> in= 16
+//i=5 -> in= 32
+//i=6 -> in= 64
+//i=7 -> in= 128
+
+Q 8x1 using 4x1 in structural 
+
+Q. 2x4 decoder :-
+	2x4 decoder 
+	inputs i0,i1;
+	outputs y0,y1,y2,y3;
+
+	expression -> y0 = i1'i0' e
+	expression -> y1 = i1'i0  e
+	expression -> y2 = i1 i0' e
+	expression -> y3 = i1 i0  e
+
+how many gates?
+		
+		4 and gates 
+		2 not gates 
+
+	//design
+	not g4(i1bar,i1);
+	not g5(i0bar,i0);
+	and g1(y0,i1bar,i0bar,e);
+	and g2(y1,i1bar,i0,e);
+	and g3(y2,i1,i0bar,e);
+	and g4(y3,i1,i0,e);
+
+LAB sessions we wont be uploading 
+only theory session
+
+

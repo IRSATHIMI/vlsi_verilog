@@ -1,0 +1,47 @@
+Questions:
+1. Clock generation
+  o in SOC: clock is not generated using forever(only TB purpose)
+  o SOC: Crystal, VCO, PLL
+  o Clock -> various clocks derived from a common clock
+  o clock frequency multiplication, dvision can be done(digital design concpets)
+  o to double the clock frequency : delay the output clock by a buffer(adding delay of 1/4 clock period)
+	o feed it as input to XOR gate and another input is clock itself
+
+  o various clocks => clock controler logic => registers wehre we program them to choose among these clocks, drive it on output clock
+		o clock selection
+  o when freq =100MHz => 50Mhz (clock division)
+  o some times we don;t need clock => clock gating
+
+2. generate clock with 75% duty cycle
+  o 75% time it is high, 25% low
+  o run the simualtion, check the waveform
+
+3. generate a clock with 3-5% of jitter
+  o if there is any way to generate clock with specific jitter value?
+  o how do we ensure circuit does not get effect by jitter?
+
+4. clock distribution
+  o many components in a subsystme may be working on same clock
+  o we have to follow T-branch apporach
+
+5. Dual port memory write, read design & testbench
+- one port is for writing
+- one port is for reading
+- 2 ports, snce we want to do paralle operation
+   o what if both are accesisng same locaiton=> RACE condition
+- benefit : increased throguput
+
+6. How do we verify very large memories?
+- we can;t verify by writing and reading each locaiton
+- we are not verifying memory locaitons, we are actually verifying port connecitons
+- Actually we are verifuing port connectivity, that is where below techniques will be used
+  - backdoor load memory, read some locaiton through fornt door, check teh data with data loaded  
+
+
+Revision:
+
+
+Agenda:
+
+
+Notes:

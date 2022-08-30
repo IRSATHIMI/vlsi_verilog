@@ -1,0 +1,127 @@
+ses:-
+date:- 16/07/2022
+
+Q. how to declare strings?
+	we use reg bases datatypes
+		reg [8*n:1]
+
+Q. what is net ?
+	nets are continuously driven ports
+
+Q what are the types of net
+	4 types
+	wand, wor, tri, wire
+
+Q. wand used?
+Q. wor used?
+Q. tri used?
+Q. wire used?
+
+____________________________________________________________________________________
+o reg 
+	inside procedural blocks variables on the LHS of the assignment we declare them as reg .
+
+	ex:-
+		inital begin
+			a=20;
+			b=a;
+			c=34;
+		end
+		we have to declare a,b,c as reg type
+
+	- reg types are scalar quantity.
+	what is scalar?
+		single bit
+
+	- by default size of reg is 1 hence they are scalar quantity.
+
+	- variables declare as registers we can use them inside procedural blocks only[i.e always block or initial block]
+	- we cant use reg based variables using assign keyword.
+		example:-
+			module top;
+			reg [3:0] addr;
+			assign addr=10; -> this statement is wrong . Q why?
+			/** Error: reg_ex.v(3): Register is illegal in left-hand side of continuous assignment/
+			endmodule
+	Q. why?
+		assign statements are used on continuously driven ports i.e net based datatypes
+		in out current example 
+		we are using addr variables which is declared as reg which is discretly driven port 
+
+	how to solve this issue?
+
+			module top;
+			reg [3:0] addr;
+			wire [3:0] addr_tmp;
+			assign addr_tmp=addr;//this is correct 
+			initial begin
+					addr=10;
+			end
+			endmodule
+
+o vectors
+	multi vit variable
+
+	Q. how to declare a vector?
+		datatype [MSB:LSB] variable_name;
+
+	Q. size of a vector?
+		magnitude[MSB-LSB]+1
+
+	example:-
+		reg [-3:6] var_a;
+		what is the size of var_a?
+			size = 10
+
+			magnitude[-9] +1
+			9+1
+			10
+
+		reg [5:22] var_b;// MSB - 5 LSB - 22
+		what is the size of var_b?
+		size = 18
+
+
+	Q. what all datatypes can i use for declaration of vectors?
+		reg or net[wand wor tri wire]
+
+	Q. why?
+		because they are one bit datatype 
+
+	Q. integer [3:0] a; is this correct?
+
+	
+	o use of wr_rd signal whcich is input to memory?
+		
+		wr_rd signal is used to indicate wheather memeory should perform write operatopn or read operation
+			wr_rd = 1 -> we do write operation to memory
+			wr_rd = 0 -> we do read operation from memory
+
+	o direction for the ports required to design cam be declared in port list itself
+	i.e
+	example:-
+		half adder
+
+		inputs a,b,
+		output sum,carry
+
+	module declaration :-
+		module ha(a,b,sum,carry);
+			input a,b;
+			output sum,carry;
+		endmodule
+
+	different approach for module declaration:-
+		module ha(input a, input b,output sum, output carry);
+
+		endmodule
+
+
+	NOTE:-
+		its a good programming practice to declare signals that are inputs to the design as _i
+		its a good programming practice to declare signals that are outputs from the design as _o
+
+			module ha(input a_i, input b_i,output sum_o, output carry_o);
+
+		endmodule
+		

@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/STUDIES/VLSI/3.VERILOG/VERILOG_JUN2022/FULL_ADDER/4bit_fulladder
+vbitadder
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 DZl[Hl@Vi[zgZG710Q_6H0
+IV@R87^YBIzM<YH5BWz9G71
+Z1 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/COMBINATIONAL/2.FULL_ADDER/4bit_fulladder
+w1658239912
+8n_bitadd_fa.v
+Fn_bitadd_fa.v
+L0 2
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1658239990.000000
+Z4 !s107 fulladder.v|n_bitadd_fa.v|tb_n-bit.v|
+Z5 !s90 -reportprogress|300|tb_n-bit.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vfa
+R0
+r1
+!s85 0
+!i10b 1
+!s100 ^GMfGNB<25z4D41P`nOW]2
+I4<a3?5ek37GeUhcBX9Fno0
+R1
+w1657522497
+8fulladder.v
+Ffulladder.v
+L0 1
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7
+vtb
+R0
+r1
+!s85 0
+!i10b 1
+!s100 aQCMjQKT^T0HcU4RNVLFo2
+IYeka7A]EbScVa4oED94Ub1
+R1
+w1658239988
+8tb_n-bit.v
+Ftb_n-bit.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

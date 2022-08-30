@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/SEQUENTIAL/memory
+vmem
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 h`Q]oHC:mfnAO]JKmU5`:0
+IEWUk[R?213QhKYO3Uk?oX2
+R0
+w1658336007
+8memory.v
+Fmemory.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+!s108 1658337110.000000
+!s107 memory.v|tb_mem.v|
+!s90 -reportprogress|300|tb_mem.v|
+!i113 0
+Z3 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z4 tCvgOpt 0
+vmemory
+R1
+r1
+!s85 0
+!i10b 1
+!s100 T]b_A_6aZKognke?B`H[21
+IanVJQXRG?=OOGn5DhGIVO3
+Z5 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/PROJECTS/14.DUAL_PORT_RAM
+w1661106013
+8dual_port_ram.v
+Fdual_port_ram.v
+L0 2
+R2
+31
+Z6 !s108 1661106112.000000
+Z7 !s107 dual_port_ram.v|tb_dual_port_ram.v|
+Z8 !s90 -reportprogress|300|tb_dual_port_ram.v|
+!i113 0
+R3
+R4
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 3ef:<T^SeDV<WbF`DNJ]F3
+IRbhD_HS;PdfXMhHWzePl;0
+R5
+w1661106109
+8tb_dual_port_ram.v
+Ftb_dual_port_ram.v
+L0 2
+R2
+31
+R6
+R7
+R8
+!i113 0
+R3
+R4

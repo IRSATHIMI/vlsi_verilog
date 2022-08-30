@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/STUDIES/VLSI/3.VERILOG/VERILOG_JUN2022/MUX2X1
+vencoder
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 S0`^Ui>nfjf_:RCmZb6z]3
+Icb2aVjbhW1UW77VB[WcWh3
+Z1 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/9.A_priority_EncodUsingMux
+w1657811676
+8encod_using_mux.v
+Fencod_using_mux.v
+L0 2
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1657811678.000000
+Z4 !s107 mux_2x1_dataflow.v|encod_using_mux.v|tb_mux_2x1.v|
+Z5 !s90 -reportprogress|300|tb_mux_2x1.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vmux_2x1
+R0
+r1
+!s85 0
+!i10b 1
+!s100 n?b94K;b`e;m_VPaaSV]W1
+I01mDMXVbUU9@nLG5[KbzD2
+R1
+w1657808477
+8mux_2x1_dataflow.v
+Fmux_2x1_dataflow.v
+L0 1
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7
+vtb
+R0
+r1
+!s85 0
+!i10b 1
+!s100 3;]bz=fVl15S2Od>2OMm`1
+I59N6CCzmmS48zoTBdeEjU2
+R1
+w1657811528
+8tb_mux_2x1.v
+Ftb_mux_2x1.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

@@ -1,0 +1,236 @@
+ses:-
+date:- 21/07/2022
+
+revision:-
+1Q. reg [10:3] vect_a;
+   reg [7:1] vect_b=69;
+
+   vect_a = vect_b;
+69 = 'b1000101
+
+   vect_a[3] = vect_b[1];  1
+   vect_a[4] = vect_b[2];  0
+   vect_a[5] = vect_b[3];  1
+   vect_a[6] = vect_b[4];  0
+   vect_a[7] = vect_b[5];  0
+   vect_a[8] = vect_b[6];  0
+   vect_a[9] = vect_b[7];  1
+   vect_a[10] =  0;
+
+   what is vecta[7]; -> 0
+   what is vecta[7:4]; -> 0010
+   what is vecta[5:1]; -> wrong reson there is no position 2 and position 1 in vect a
+   what is vecta[5:3]; ->101
+
+2Q. integer a;
+	assign a=10;
+	
+	can we implement above code if not why?
+	what should be the changes made to above code?
+
+Ans:-
+	No
+	reason?
+		assign is a continuously statatemnt 
+		integer reg type
+		reg is discretely driven
+		we cant use assign on interger based variable
+
+	to execute above code 
+
+	use procedural blocks
+
+		initial begin
+			a=10;
+		end
+				
+				or
+
+	integer a_t;
+	wire [31:0] a;
+
+	assign a=a_t;
+
+		initial begin
+			a_t=10;
+		end
+
+	
+
+3Q. wire [5:0] b;
+	assign b=13;
+
+	can we execute above logic?
+Ans:-
+	yes
+	since b is continuously drivven variable we can use continuously assign statements
+
+4Q declare input "a" as vector whose MSb is 4 and vector size is 8
+Ans:- 
+formula:-
+	size = magnitude[MSB-LSB] +1
+	size = 8 
+	MSB = 4
+
+	intput [4:-3]a;
+
+_________________________________________________________________________________________________________________________
+agenda:-
+  o time
+  o realtime
+  o timescale
+  o clock generation
+
+o time:-
+ is a datatype what is used to measure the current simulation time.
+ these are reg based variable
+ store the current simulation time in integer format
+
+ How to declare ?
+ 	time variable_name;
+	size is 32 bits
+
+
+o realtime:-
+ is a datatype what is used to measure the current simulation time.
+ store the current simulation time in real format
+
+ How to declare ?
+ 	realtime variable_name;
+
+	size is 64 bits
+
+Q.in the code where to use time and realtime variables?
+-> use them inside procedural blocks
+
+
+Q. how to get the simulation time in integer format and real format?
+-> verilog systemtask
+		$time
+			what is $time
+				used to return the current simulation time in integer format
+		$realtime
+				used to return the current simulation time in real format
+
+o timescale:-
+
+	synyax:-
+		
+		`timescale timestep/timeprecission
+
+		timestep 
+			used to measute the delay
+			used to measure how frequently simulation will run in the simulation events
+				
+				simulation events in verilog 
+					Active region
+						blocking assignments
+						RHS value gets evaluated[out = a+b]
+						assign
+						$display
+					inactive region
+						0 delay statements
+					non-blocking region
+						LHS
+					monitor region
+
+			example:-
+				dialy schedule									codes
+					9am to 9:45am -> travell					
+					10am to 1pm   -> verilog session
+					3pm to 5pm    -> sv session
+					6pm to 7pm    -> travell
+
+				this scehedule i follow for one month  			entire simulation
+
+				now ;
+					how much frequently am i doing this dialy task in JULY     -> timestep
+						july -> how many days -> 31 -> -4 -> 27 times 
+							each day for 27 days in july month -> timestep
+			
+			used to measure delay?
+				in code
+					initial begin
+						#10; -> these are called as delay statement 
+							 -> delay_number * timestep
+							 if timestep declared is 1ps
+							 -> 10*1ps = 10ps
+							 if timestep declared is 1ns
+							 -> 10*1ns = 10ns
+							 if timestep declared is 10ns
+							 -> 10*10ns = 100ns
+						#200;
+
+					end
+
+	
+		timeprecission
+			how delay values are rounded off before being used in simulation
+				lowest possible measurable value
+
+				dealy values > timeprecission
+
+		example:-
+			`timescale 10ns/10ps
+
+		1	#0.5    ->  0.5 * 10ns -> 5ns > 10ps -> yes [measurable unit]
+		2	#0.05    ->  0.05 * 10ns -> 0.5ns-> 500ps > 10ps -> yes [measurable unit]
+									0.5 * 10 ** -9
+									500*10**-12
+		3	#0.005    ->  0.005 * 10ns -> 0.05ns-> 50ps > 10ps -> yes [measurable unit]
+		4	#0.0005    ->  0.0005 * 10ns -> 0.005ns-> 5ps > 10ps -> NO [NOT a measurable unit]
+
+		in scenario 4 
+		since we are having timeprecission of 10ps we cant measure 0.0005 value 
+		so the simulator will treat this value as 0
+
+
+
+Question:-
+1. what is the default value of timestep?
+2. what is the default value of timeprecission?
+
+=> depends on tool which we use and also the version of tool
+	MODELSIM  -> `timescale 1ps/1ps
+	QUESTASIm -> `timescale 1ns/1ns
+
+
+guideline:-
+1. number to be used
+	1,10 or 100
+2. char(unit) that can be used 
+	s
+	ms
+	microsec
+	ns
+	ps
+	fs
+
+Question:-
+
+1. when we will use timescale concept
+		to generate of clk having timeperiod and duty cycle.
+
+2. even thoughe we dont mention explicitely the timescale values
+	tool will be having default timescale declared 
+
+
+NOTE:-
+	run.do
+
+	here run is a userdefined filename
+	an user can also save the .do files as sim.do or execute.do
+
+	MODELSImM or QUESTASIm
+
+	if user create the file as run.do
+	in tool he has to give 
+		do run.do
+		here 1st "do" word -> its a command in modelsim telling the tool to execute the tcl script file
+		run.do is the file that has the commands 
+
+	if user create the file as sim.do
+	in tool he has to give 
+		do sim.do
+		here 1st "do" word -> its a command in modelsim telling the tool to execute the tcl script file
+		sim.do is the file that has the commands 

@@ -1,0 +1,18 @@
+1. Advanced TLC
+2. File handling
+3. Operators
+4. Blocking  & Nonblockng
+5. Race condition
+6. PCIe LTSSM
+7. Synchrnous FIFO
+8. Asynchrnous FIFO
+9. Pattern Detector
+10. Flipflop, counter, state machines
+   o Different types of counter: grey code counter, why we need it?
+11. Memory controller
+12. WDOG Timer
+
+
+1. Complete Design flow
+2. 
+

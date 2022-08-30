@@ -1,0 +1,49 @@
+ses:-
+date:- 13/07/2022
+
+BELOW 8 to 13 questions implement only structural method
+8. and gate using 2x1 mux
+9. xor gate using 2x1 mux
+10. xnor gate using 2x1 mux
+11. nand gate using 2x1 mux
+12. nor gate using 2x1 mux
+13. or gate using 2x1 mux
+
+o display internal signals of design in tb
+o xnor gate using 2x1 mux
+o not gate using 2x1 mux
+
+
+14. implement 2 bit comparator using 1 bit comparator use structural method?
+
+	expression:-
+	E-> (A1 xnor B1) (A0 xnor B0)
+	L-> A1'B1 + (A1 xnor B1)A0'B0
+	G-> A1B1' + (A1 xnor B1)A0B0'
+
+15. 4 bit full adder using 1 bit full adder?
+
+NOTE:-
+	1. if at all you have used space between filename
+		i.e mux_4x1 structural.v
+		then during including of the file
+		use backslash "\"
+	2. keep into point that verilog/sv language will not allow us to use space for writing module name
+		i.e having 
+			module mux_4x1 structural(pot_list); --> is not allowed 
+		if at all we have to use space in giving module name use underscore "_"
+		i.e do 
+			module mux_4x1_structural(poty_list); --> is allowed 
+
+	3. during design instantiation, we have to use the entire design module name.
+	4. during compilation command i.e vlog if at all file name has space inbetween them 
+		use vlog tb_mux_4x1\ structural.v
+
+o How to write $display and $monitor statements?
+
+syntax:-
+	$monitor(arguments);
+
+
+
+

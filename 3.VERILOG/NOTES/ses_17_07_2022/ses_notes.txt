@@ -1,0 +1,324 @@
+ses:-
+date:- 21/07/2022
+
+Q. How to declare vectors?
+
+	datatype [MSB:LSB] var_name;
+		- dimensions for vectors it is declared on the LHS side of the var_name.
+
+Q. How to assign value to a vector?
+	what is the format?
+		Ans:-
+			we have to follow radix format
+			<size>'<radix_base><value>
+		example:-
+			we have a vector declaration as
+				reg [5:0] a;
+			we need to assign hexadecimal value "F" to variable a
+
+				assign a=6'hf; -> this is wrong why?
+
+			  initial begin
+					a=6'hf;//6'hf does not mean that we have 6 times value "f"	
+					a[0]=1
+					a[1]=1
+					a[2]=1
+					a[3]=1
+					a[4]=0
+					a[5]=0
+			  end
+
+Q. vector value assignment?
+
+			example:-
+				reg [31:0] addr?
+				user needs to assign a value of 200 in decimal to addr?
+		
+					<size>'<radix_base><value>
+					radix_base -> b/o/h/d
+					size -> mentioned else see the declaration part
+					value -> depends on user
+				
+				in decimal:-
+					addr=32'd200; => addr=200;
+		
+				in binary:-
+					addr=32'b1100_1000;
+					addr=32'B1100_1000;
+		
+				in hexadecimal:-
+					addr = 32'hC8;
+					addr = 32'HC8;
+		
+				in octal
+					addr = 32'o310
+					addr = 32'O310
+		
+		 o  hexa    bin
+		     x      xxxx
+			 z      zzzz
+		
+		 o  octal    bin
+		     x       xxx
+			 z       zzz
+		
+		 o capital X and Z
+		 		indicates only some of the bits in binary are x or z
+		
+				example:-
+					reg [7:0] addr;
+		
+					addr=8'b101x_xx10; -> X
+		
+		o if in avector if only few of the bits are "z" output is Z
+		
+		o during vector what if some bits are x abd some bits are z
+				when ever there is a reace between x and z -> "X" will always win 
+
+o vector to vector assignment[copy vector A to vector B]
+
+vector copy happens from LSB to MSB mapping
+example:-
+ we have two vectors
+ 	reg [5:0] a;//LSb=0   MSB=5  
+	reg [5:0] b;//LSb=0   MSB= 5
+
+	b=6'b110_011;
+	a=b;
+
+	vector copy happens LSB to MSB mapping 
+
+	a[0] = b[0]
+	a[1] = b[1]
+	a[2] = b[2]
+	a[3] = b[3]
+	a[4] = b[4]
+	a[5] = b[5]
+
+three posible scenarios
+1. size of LHS vector is equal to size of RHS vector.
+
+example:-
+ we have two vectors
+ 	reg [5:0] a;//LSb=0   MSB=5  
+	reg [5:0] b;//LSb=0   MSB= 5
+
+	a=6'b110_011;
+	b=a;
+	//always RHS side will be assgned/ copied to LHS side
+
+	vector copy happens LSB to MSB mapping 
+
+	b[0] = a[0]
+	b[1] = a[1]
+	b[2] = a[2]
+	b[3] = a[3]
+	b[4] = a[4]
+	b[5] = a[5]
+
+example:-
+
+ we have two vectors
+ 	reg [-3:3] a;//LSb=3   MSB=-3//size 7  
+	reg [7:1] b;//LSb=1   MSB= 7//size 7
+
+	b=7'b1110_011;
+
+	a=b;
+
+	how this copy happens in vectors?
+	a[3] = b[1];
+	a[2] = b[2];
+	a[1] = b[3];
+	a[0] = b[4];
+	a[-1] = b[5];
+	a[-2] = b[6];
+	a[-3] = b[7];
+	
+
+2. size of LHS vector is greater to size of RHS vector.
+
+example:-
+	reg [-3:2] a; LSB =2  MSB =-3   SIZE= 6 -> mgn[MSB-LSB] + 1 -> 5+1 -> 6 
+	reg [-7:-5] b;LSB =-5  MSB =-7   SIZE=3  
+
+	b= 3'b111;
+
+	a=b
+		in above LHS size is bigger compared to RHS size
+
+	how will the vector copy occur
+	a[2] = b[-5]
+	a[1] = b[-6]
+	a[0] = b[-7]
+    a[-1] =0
+	a[-2] =0
+	a[-3] =0
+		
+		remaining positions of a will be appended as "0"
+
+		i.e a[-1] =0
+		    a[-2] =0
+			a[-3] =0
+
+	therefor->
+			a=6'b000_111;
+
+
+3. size of LHS vector is lesser to size of RHS vector.
+
+
+example:-
+	reg [-3:2] a; LSB =2  MSB =-3   SIZE= 6 -> mgn[MSB-LSB] + 1 -> 5+1 -> 6 
+	reg [-7:-5] b;LSB =-5  MSB =-7   SIZE=3  
+
+	a= 6'b010_101;
+
+	b=a
+		in above LHS size is lesser compared to RHS size
+
+	how will the vector copy occur
+		b[-5] = a[2]
+		b[-6] = a[1]
+		b[-7] = a[0]
+
+		then what happens to remaing values of a
+			i.r a[-1]
+				a[-2]
+				a[-3]
+			all the above positions of a vector will be ignored or tuncated
+
+		
+
+	value a= 6'b010_101;
+	after doing 
+		b=a
+	value of b =3'b101;
+
+o vector slice management:- or vector slicing
+
+example:-
+	reg [7:0] a; LSB = 0  MSB = 7
+	reg [7:0] b; LSB = 0 MSB = 7
+
+	size of both vector a and b is -> 8
+		b=8'b1010_0011;
+		a=b;
+
+	how dos vector copy?
+	a[0] = b[0]  1
+	a[1] = b[1]  1
+	a[2] = b[2]  0
+	a[3] = b[3]  0
+	a[4] = b[4]  0
+	a[5] = b[5]  1
+	a[6] = b[6]  0
+	a[7] = b[7]  1
+
+	Q. what is the value of a[4:2] -> 3'b000;
+	Q. what is the value of a[6:3] -> 4'b0100;
+	Q. what is the value of a[3:1] -> 3'b001;
+
+
+example:-
+
+ we have two vectors
+ 	reg [-3:3] a;//LSb=3   MSB=-3//size 7  
+	reg [7:1] b;//LSb=1   MSB= 7//size 7
+
+	b=7'b1110_011;
+
+	a=b;
+
+	how this copy happens in vectors?
+	a[3] = b[1];  1
+	a[2] = b[2];  1
+	a[1] = b[3];  0
+	a[0] = b[4];  0
+	a[-1] = b[5]; 1
+	a[-2] = b[6]; 1
+	a[-3] = b[7]; 1
+	
+
+	Q. what is the value of a[-2:2] ->5'b11001
+	Q. what is the value of a[-1:1] ->3'b100
+	Q. what is the value of a[0:3]  ->4'b0011
+
+Q. what is vector slicing?
+		taking a big vector and dividing them into smaller portions to do any further operations.
+
+
+o operations that can be performed on vectors?
+	vectors are nothing but integers itself.
+	vectors are intergers both are having single memory location
+
+	example:-
+		when we declare as 
+		integer a;//  tool creates a memory for variable a 
+
+		same manner when we declare vectors
+ 			reg [-3:3] b;// here aslo tool creates a memory for variable b 
+
+		vectors values are stored in a single address locations.
+
+		all the arthematic operations,logical,bitwise,concatination,replication,relational operations can be performed on vectors
+		
+Q. assigning an interger to a 3 bit variable
+				display 3 bit variable
+					only the 3 bit will get displayed
+
+
+Q. assigning 3 bit variable to a integer 
+
+o integers	
+
+	size -> 32 bits
+	integers are signed datatype
+	integers are nothing but registers
+	declare integers:-
+		integer a;
+		integer b,c,d;
+
+	if integers are registers then to use integer variables?
+		can i user integers using assign -> NO
+		we have to use integers insode procedural blocks
+
+	default value of integers:-
+			x-> unknown
+
+o real data type:-
+	64 bit size
+	hoe to asssign value to a real datta type
+		real r;
+
+		intial begin
+			$display("r=%f",r);
+			r= 3.142;
+			r=10;//10.000
+		end
+
+
+	default value of real:-
+		0.0
+
+
+example:-
+module top;
+integer a;
+real r;
+
+		intial begin
+			$display("r=%f",r);//0.0
+			$display("a=%d",a);//x
+			r= 3.142;
+			a=10;
+			$display("r=%f",r);//3.142
+			$display("a=%d",a);//10
+			r= 3.142;
+			a=10.110;
+			$display("r=%f",r);//3.142
+			$display("a=%d",a);//10
+		end
+
+endmodule
+___________________________________________________________________________________________

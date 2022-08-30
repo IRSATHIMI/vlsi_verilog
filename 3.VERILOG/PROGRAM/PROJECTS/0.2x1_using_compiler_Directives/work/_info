@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/2x1_using_compiler_Directives
+vmux
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 J>4GJlaP5BLJGHMRWP_h?2
+Ian2dcLbmX3g`L6iH>;0_k0
+R0
+w1658922779
+82X1_muc_comp_dirc.v
+F2X1_muc_comp_dirc.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1658923210.000000
+Z4 !s107 2X1_muc_comp_dirc.v|tb_2x1.v|
+Z5 !s90 -reportprogress|300|tb_2x1.v|+define+BEHAV|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 +define+BEHAV -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 ]izZjoe4eSmCIYOUl=NR31
+Ij:kemnXmD0c7:z6^hC0_J2
+R0
+w1658923089
+8tb_2x1.v
+Ftb_2x1.v
+L0 3
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7
+R8

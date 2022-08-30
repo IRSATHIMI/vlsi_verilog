@@ -1,0 +1,151 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/GATES_USING_MUX
+vand2_2x1
+!s110 1657651843
+!i10b 1
+!s100 A3ziU9h<>gLUPzfbff?221
+Io;jK]g20;dlgQblN0PBBh0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1657651728
+Z2 8and2.v
+Z3 Fand2.v
+L0 2
+Z4 OL;L;10.7c;67
+r1
+!s85 0
+31
+!s108 1657651843.000000
+Z5 !s107 mux_2x1.v|and2.v|tb_and.v|
+Z6 !s90 -reportprogress|300|tb_and.v|
+!i113 0
+Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+vandg
+R1
+r1
+!s85 0
+!i10b 1
+!s100 Mh^>6;IZ90:haSfTDKAFd0
+I4W0<iFF^MINN`6nHKY4[;2
+R0
+w1657652402
+R2
+R3
+L0 2
+R4
+31
+!s108 1657652438.000000
+R5
+R6
+!i113 0
+R7
+R8
+vandg2
+R1
+r1
+!s85 0
+!i10b 1
+!s100 k=:BXZNP@NS;f4>Cfdl<f3
+IfE<zLe3UmQCF@gz7U[CLe3
+R0
+w1657653170
+8and3.v
+Fand3.v
+L0 2
+R4
+31
+!s108 1657653281.000000
+!s107 mux_2x1.v|and3.v|tb_and3.v|
+!s90 -reportprogress|300|tb_and3.v|
+!i113 0
+R7
+R8
+vmux_2x1
+R1
+r1
+!s85 0
+!i10b 1
+!s100 b<zI<[AQMC;TEJz92d8Am2
+IGmRFf2hD^nCn8hVUKjh:=0
+Z9 de:/STUDIES/vLSI/3.VERILOG/PROGRAM/GATES_USING_MUX/nand
+w1657652436
+8mux_2x1.v
+Fmux_2x1.v
+L0 1
+R4
+31
+Z10 !s108 1657656001.000000
+Z11 !s107 mux_2x1.v|nand3.v|tb_3nand.v|
+Z12 !s90 -reportprogress|300|tb_3nand.v|
+!i113 0
+R7
+R8
+vnand3
+R1
+r1
+!s85 0
+!i10b 1
+!s100 WEghGVC?9h>4i@DlXQo^g2
+IOG]eLg79_b18[i?Z<A5?_1
+R9
+w1657655954
+8nand3.v
+Fnand3.v
+L0 2
+R4
+31
+R10
+R11
+R12
+!i113 0
+R7
+R8
+vnandg2
+R1
+r1
+!s85 0
+!i10b 1
+!s100 9_=4=oCdih8KPL=Y0_KJA1
+IVA8PlnffQZQgXaG^gJfZA1
+R9
+w1657655187
+8nand2.v
+Fnand2.v
+L0 2
+R4
+31
+!s108 1657655188.000000
+!s107 mux_2x1.v|nand2.v|tb_2nand.v|
+!s90 -reportprogress|300|tb_2nand.v|
+!i113 0
+R7
+R8
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 _4cZjTM>KA^^OLkV9KJ3k3
+IzoDh_Q;m3==4?T;liTCKk3
+R9
+w1657656000
+8tb_3nand.v
+Ftb_3nand.v
+L0 2
+R4
+31
+R10
+R11
+R12
+!i113 0
+R7
+R8

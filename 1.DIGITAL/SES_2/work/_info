@@ -1,0 +1,35 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/DIGITAL_JUNE/SES_2
+vtop
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1655271128
+!i10b 1
+!s100 R375b]9Rjbgn_Z@jTzT_S0
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IR>]eT1^8eanWmSUk01;NQ0
+VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1655271113
+8radix_format_ex2.sv
+Fradix_format_ex2.sv
+!i122 5
+L0 1 15
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1655271128.000000
+!s107 radix_format_ex2.sv|
+!s90 -reportprogress|300|radix_format_ex2.sv|
+!i113 1
+tCvgOpt 0

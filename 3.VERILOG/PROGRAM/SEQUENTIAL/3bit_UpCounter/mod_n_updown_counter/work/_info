@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/SEQUENTIAL/3bit_UpCounter/behavioral
+vtb
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 <OU;8z>^PTP`@i;M:QTDi1
+IYT=@6U0]QUAhQd78P^Ijc3
+Z1 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/SEQUENTIAL/3bit_UpCounter/mod_n_updown_counter
+w1658082058
+8tb_upcount.v
+Ftb_upcount.v
+L0 2
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1658082996.000000
+Z4 !s107 upcount3bit_behav.v|tb_upcount.v|
+Z5 !s90 -reportprogress|300|tb_upcount.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vupcount
+R0
+r1
+!s85 0
+!i10b 1
+!s100 oT6znDF<`VHg7]84iF`XX3
+IfMZ0LhE2aV622`Ki6N4OK0
+R1
+w1658082985
+8upcount3bit_behav.v
+Fupcount3bit_behav.v
+L0 1
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

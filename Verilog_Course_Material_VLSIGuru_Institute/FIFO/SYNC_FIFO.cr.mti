@@ -1,0 +1,9 @@
+E:/VLSI_MATERIAL/Verilog/Verilog-APR2015/FIFO/tb.v {1 {vlog -work work -vopt E:/VLSI_MATERIAL/Verilog/Verilog-APR2015/FIFO/tb.v
+QuestaSim vlog 10.2e Compiler 2014.06 Jun 20 2014
+-- Compiling module fifo
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}}

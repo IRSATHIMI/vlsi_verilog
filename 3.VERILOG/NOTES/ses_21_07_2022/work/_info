@@ -1,0 +1,41 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/VLSIGURU/THEORY_AND_LAB/3.VERILOG/verilog_JULY/THEORY/ses_21_07_2022
+T_opt
+!s110 1658425596
+VL=PJ=NlIgZW77bg_YWzQz1
+04 2 4 work tb fast 0
+=1-544810ba7d49-62d990fc-321-3734
+o-quiet -auto_acc_if_foreign -work work
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.7c;67
+vtb
+!s110 1658425591
+!i10b 1
+!s100 mfAH>]Aeh_3O<W1PYdBQG0
+ImdOHP6oN8eT>XOT5]dlIm1
+VDg1SIo80bB@j0V0VzS_@n1
+dE:/STUDIES/VLSI/3.VERILOG/NOTES/verilog_july_THEORY/ses_21_07_2022
+w1658425590
+8time_realtime.v
+Ftime_realtime.v
+L0 2
+OL;L;10.7c;67
+r1
+!s85 0
+31
+!s108 1658425591.000000
+!s107 time_realtime.v|
+!s90 -reportprogress|300|time_realtime.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0

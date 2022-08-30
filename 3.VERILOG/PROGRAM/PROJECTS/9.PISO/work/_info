@@ -1,0 +1,71 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/PROJECTS/PISO
+vfifo_async
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 ]=?`igo`4<Pe4]=b>AM5C3
+Ii8flKm?A::eWF_=^N?<fD0
+Z1 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/PROJECTS/9.PISO
+w1660685898
+8fifo_async.v
+Ffifo_async.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1661113752.000000
+Z4 !s107 fifo_async.v|piso_design.v|tb_piso.v|
+Z5 !s90 -reportprogress|300|tb_piso.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vpiso
+R0
+r1
+!s85 0
+!i10b 1
+!s100 glLC89J7IR3d@iaXjH=1Y1
+Ia_`4=I:^WcF:QbS3Sf6=k3
+R1
+w1661108760
+8piso_design.v
+Fpiso_design.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7
+vtb
+R0
+r1
+!s85 0
+!i10b 1
+!s100 FDJ^5_]aT<Uzn6N7a^k=f1
+IdVo4ZWQ^M::Q?j_IQ]45k0
+R1
+w1661108728
+8tb_piso.v
+Ftb_piso.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

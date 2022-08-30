@@ -1,0 +1,155 @@
+ses:-
+date:- 06/07/2022
+
+o search and replace:-
+
+example:
+	Q. search hardware word and replace with software using search and replaace command in gvim
+
+		am i doing the operation for entire file
+		or 
+		am i doing the operation for specific range of line
+	
+		command :-
+			i doing the operation for entire file
+				:%s/Hardware/Software/g
+			i doing the operation for specific range of line
+				:3,8s/Hardware/Software/g
+	
+	Q. search for "(" and replace with "["
+		command :-
+			:21,31s/(/[/g
+
+		NOTE:-
+			:21,31s/\[/(/g
+
+
+		
+o save as command 
+	example:-
+		Q. save the current file as copy.txt 
+			:w copy_1.txt
+			or
+			:sav copy_2.txt
+
+Q. How to open already saved files:-
+->  go to escape mode 
+	type  :vspl ctrld		or   :spl ctrld
+			-> shows the list of files present in current folder
+	choose(type) the file which we want to open	
+
+
+
+o navigation between files
+	in escape mode
+		ctrlw<use_arrow_keys>
+
+		example:-
+			ctrlw2<right_arrow>
+
+o select all 
+	in eacape mode
+		ggVG
+		-> gg = go top
+		-> V  = visual line -> selectes the one ectire line
+		-> G  = go to bottom of file
+
+o select all and copy
+		ggVGy
+
+o select all and delete 
+		ggVGd
+
+NOTE:-
+	select only 53 and 64 th line
+		53ggV64G
+
+NOTE:-
+	:syntax on command will not work on text file
+
+NOTE:-
+	Q. sir i creates adder.v file and wrote some content in them and i saved the asser.v file
+	   when i see my folder there are many files getting saved such as .un~, adder.v~, .un and etc
+
+	-> when ever we do save operation for a file
+		gvim creates intrnal files also
+
+		dont worry about .un~ or .v~ such files
+
+		only notice "adder.v"
+
+NOTE:-
+	to open or create a file in a new tab
+	command 
+		escape mode
+		:tabnew filename.extension
+
+
+_______________________________________________________________________________________________________
+o VIMRC files:-
+
+VIMRC file its a one time thing
+what is rc files?
+	rc -> root configuration files
+
+	-> in which if we have to configure we have do it in vimrc file
+    
+	to code the vimrc file we need to open them:-
+
+	step 1 :-
+		open vimrc file
+			:vspl ~/.vimrc
+
+			where -> ~-> root directory -> installation path 
+				  -> / -> directory seperation concept
+				  -> . -> indicates particular file is hidden
+				  -> vimrc -> filename
+
+	step 2:-
+		do the required configuration
+		
+				set hlsearch[done]
+				set backspace=indent,eol,start[done]
+				set guifont=Consolas:h14[done] 
+				syntax on [done]
+				set incsearch[done]
+				set tabstop=5[done]
+				set showmode[done]
+				set showmode[done]
+				set showmode[done]
+				set autoindent[done] -> coading
+				set nu [done]
+				set color blue
+				set spell
+
+
+	step 3:-
+		save the vimrc file
+		:w
+
+	step 4:-
+		restart the gvim application
+			close and open gvim application
+
+NOTE:-
+	searh word command
+	command 
+		escape mode
+			/<patterh_to_search>
+
+		example:-
+			requirent -> search for the word "set"
+				-> 
+					/set
+	
+
+o auto indent:-
+	
+	next line indentation follows the previous line indentation
+
+	if(exp) begin
+			statemnt 1;
+			staemnt 2;
+			statement 4;
+	end
+

@@ -1,0 +1,131 @@
+# vsim -coverage -vopt work.tb_coincol -c -do "coverage save -onexit -directive -cvg -codeAll duv_cov; run -all; exit" 
+# Start time: 07:31:03 on Feb 17,2016
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# //  Questa Sim-64
+# //  Version 10.3e win64 Feb 24 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading work.tb_coincol(fast)
+# Loading work.coincol(fast)
+# coverage save -onexit -directive -cvg -codeAll duv_cov
+#  run -all
+# Reset is perfect 
+# 
+# You have to put some amount
+# Reset is perfect 
+# 
+# Now the Amount is 50 Paise
+# DONE = 0 
+# 
+# Now the Amount is 50 Paise
+# DONE = 0 
+# 
+# Now the Amount is 50 Paise
+# DONE = 0 
+# 
+# Reset is perfect 
+# 
+# Now the Amount is 25 Paise
+# DONE = 0 
+# 
+# Now the Amount is 75 Paise
+# DONE = 0 
+# 
+# Now the Amount is 75 Paise
+# DONE = 0 
+# 
+# Reset is perfect 
+# 
+# Now the Amount is 25 Paise
+# DONE = 0 
+# 
+# Now the Amount is 50 Paise
+# DONE = 0 
+# 
+# Now the Amount is 75 Paise
+# DONE = 0 
+# 
+# Now the Amount is 1 Rupee
+# DONE = 1 
+# 
+# Reset is perfect 
+# 
+# Now the Amount is 50 Paise
+# DONE = 0 
+# 
+# Now the Amount is 1 Rupee
+# DONE = 1 
+# 
+# Reset is perfect 
+# 
+# Now the Amount is 25 Paise
+# DONE = 0 
+# 
+# Now the Amount is 75 Paise
+# DONE = 0 
+# 
+# Reset is perfect 
+# 
+# Now the Amount is 1 Rupee
+# DONE = 1 
+# 
+# Reset is perfect 
+# 
+# Now the Amount is 25 Paise
+# DONE = 0 
+# 
+# Now the Amount is 1 Rupee
+# DONE = 1 
+# 
+# Reset is perfect 
+# 
+# Now the Amount is 25 Paise
+# DONE = 0 
+# 
+# Now the Amount is 50 Paise
+# DONE = 0 
+# 
+# Reset is perfect 
+# 
+# Now the Amount is 25 Paise
+# DONE = 0 
+# 
+# Now the Amount is 75 Paise
+# DONE = 0 
+# 
+# Reset is perfect 
+# 
+# Now the Amount is 25 Paise
+# DONE = 0 
+# 
+# Now the Amount is 25 Paise
+# DONE = 0 
+# 
+# Reset is perfect 
+# 
+# Now the Amount is 50 Paise
+# DONE = 0 
+# 
+# Now the Amount is 1 Rupee
+# DONE = 1 
+# 
+# Error at time                  785
+# ** Note: $stop    : ../tb/tb_coincol3.v(146)
+#    Time: 785 ns  Iteration: 0  Instance: /tb_coincol
+# Break in Task load_coin at ../tb/tb_coincol3.v line 146
+# Stopped at ../tb/tb_coincol3.v line 146
+#  exit
+# End time: 07:31:06 on Feb 17,2016, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

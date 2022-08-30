@@ -1,0 +1,47 @@
+run.do file:
+add wave *
+	it will only add signals under tb module, not the modules below.
+
+add wave sim:/tb/dut/*
+	it will add signals under dut module, not otehr modules.
+
+add wave sim:/tb/*
+	it will add signals under tb module, not otehr modules.
+
+add wave -r sim:/tb/*
+	-r : recursively
+	add all signals under tb module, and also the signals in modules below the tb.
+
+
+1. Basic linux commands
+	ls
+	cd
+	pwd
+	cd ..
+	cd ../
+
+2.
+#                    1: a=0, b=0, s=0, c=0
+#                    2: a=0, b=1, s=1, c=0
+#                    3: a=0, b=1, s=1, c=0
+#                    4: a=1, b=1, s=0, c=1
+#                    5: a=0, b=1, s=1, c=0
+#                    6: a=0, b=1, s=1, c=0
+#                    7: a=0, b=1, s=1, c=0
+#                    8: a=1, b=0, s=1, c=0
+#                    9: a=0, b=1, s=1, c=0
+#                   10: a=0, b=1, s=1, c=0
+
+3. Implement 4 bit FA circuit using 1 bit FA circuit
+
+ 1011
+ 1111
+  11 
+ ----
+
+4. If I use 1 bit FA to implement a 4 bit FA, what is this style of Verilog coding is called as?
+	o structural
+
+
+
+

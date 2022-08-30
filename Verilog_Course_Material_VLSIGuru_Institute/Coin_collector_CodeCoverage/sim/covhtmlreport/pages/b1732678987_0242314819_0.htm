@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _work.tb_coincol_load_coinContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z0310174648_1527865875_0.htm">work.tb_coincol</a>/<a href="z1732678987_0242314819_0.htm">load_coin</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div><a name="cvg157"/><hr/><table>
+  <tr z="        if (coin == 2'b00)" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="73" c="Y" p="80.00"/><tr/>
+  <tr cr="c" t="I" z="        if (coin == 2'b00)" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="73" h="11" c="g"/>
+  <tr cr="c" t="T" z="        else if (coin == 2'b01)" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="75" h="8" c="g"/>
+  <tr cr="c" t="T" z="        else if (coin == 2'b10)" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="77" h="3" c="g"/>
+  <tr cr="c" t="T" z="        else if (coin == 2'b11)" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="79" h="5" c="g"/>
+  <tr cr="m" t="A" z="        if (coin == 2'b00)" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="73" h="0" c="r"/>
+  </table>
+  </div><div class="covered"><a name="cvg158"/><hr/><table>
+  <tr z="        case(coin_sum)" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="88" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="T" z="            paise25 :begin " hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="89" h="8" c="g"/>
+  <tr cr="c" t="T" z="            paise50 :begin   " hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="101" h="7" c="g"/>
+  <tr cr="c" t="T" z="            paise75 :  begin " hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="113" h="5" c="g"/>
+  <tr cr="c" t="T" z="             rupee1  :  begin" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="125" h="3" c="g"/>
+  <tr cr="c" t="T" z="           nocoin   : $display("You have to put some amount"); ..." hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="137" h="1" c="g"/>
+  <tr cr="c" t="T" z="          default    :  //Covers the amounts 125, 150 ans 175 " hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="139" h="3" c="g"/>
+  </table>
+  </div><div><a name="cvg159"/><hr/><table>
+  <tr z="                         if (done !== 1'b0 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="90" c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" z="                         if (done !== 1'b0 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="90" h="0" c="r"/>
+  <tr cr="c" t="A" z="                         if (done !== 1'b0 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="90" h="8" c="g"/>
+  </table>
+  </div><div><a name="cvg160"/><hr/><table>
+  <tr z="                        if (done !== 1'b0 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="102" c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" z="                        if (done !== 1'b0 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="102" h="0" c="r"/>
+  <tr cr="c" t="A" z="                        if (done !== 1'b0 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="102" h="7" c="g"/>
+  </table>
+  </div><div><a name="cvg161"/><hr/><table>
+  <tr z="                         if (done !== 1'b0 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="114" c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" z="                         if (done !== 1'b0 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="114" h="0" c="r"/>
+  <tr cr="c" t="A" z="                         if (done !== 1'b0 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="114" h="5" c="g"/>
+  </table>
+  </div><div><a name="cvg162"/><hr/><table>
+  <tr z="                           if (done !== 1'b1 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="126" c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" z="                           if (done !== 1'b1 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="126" h="0" c="r"/>
+  <tr cr="c" t="A" z="                           if (done !== 1'b1 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="126" h="3" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg163"/><hr/><table>
+  <tr z="                           if (done !== 1'b1 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="141" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" z="                           if (done !== 1'b1 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="141" h="1" c="g"/>
+  <tr cr="c" t="A" z="                           if (done !== 1'b1 ||" hf="__HDL_srcfile_1.htm" f="../tb/tb_coincol3.v" l="141" h="2" c="g"/>
+  </table>
+  </div><script type="text/javascript" src="../scripts/buildbranchpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

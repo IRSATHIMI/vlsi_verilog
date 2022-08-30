@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/PROJECTS/12.SERDES
+vfifo_async
+Z0 !s110 1660930936
+!i10b 1
+!s100 KgGO0E^^=CCK^I:7i8OX:1
+I_n3iDDAM[L84DWBeOeCWB1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/PROJECTS/12.SERDES/using_compiler_directives
+w1660916190
+8fifo_async.v
+Ffifo_async.v
+L0 1
+Z3 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z4 !s108 1660930936.000000
+!s107 sipo_design.v|fifo_async.v|piso_design.v|SerDES.v|tb_SerDes.v|
+Z5 !s90 -reportprogress|300|tb_SerDes.v|+define+SP|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 +define+SP -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+vpiso
+R0
+!i10b 1
+!s100 o`n3WYl9>ZDoUz<9Qb>AJ3
+I>FKA?Z3Y?4SAEhz_c7Q?b3
+R1
+R2
+w1660685667
+8piso_design.v
+Fpiso_design.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+Z9 !s107 sipo_design.v|fifo_async.v|piso_design.v|SerDES.v|tb_SerDes.v|
+R5
+!i113 0
+R6
+R7
+R8
+vsipo_design
+R0
+!i10b 1
+!s100 71L8_n^YRMC:E5l=mzje?3
+IFB_oO2YoA]6_E0V3AI_hA0
+R1
+R2
+w1660915812
+8sipo_design.v
+Fsipo_design.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R9
+R5
+!i113 0
+R6
+R7
+R8

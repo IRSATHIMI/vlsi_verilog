@@ -1,0 +1,30 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/SEQUENTIAL/clock_gen/clock_gen_100mhz
+vtb
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 aU8a1:3@OECMZ>a3jOigU2
+I72>ZmSa8BOL<_0[aVYDZ<3
+dE:/STUDIES/VLSI/3.VERILOG/PROGRAM/SEQUENTIAL/clock_gen/clock_gen_user_freq_duty
+w1658166732
+8clock_user_freq.v
+Fclock_user_freq.v
+L0 1
+OL;L;10.7c;67
+31
+!s108 1658166757.000000
+!s107 clock_user_freq.v|
+!s90 -reportprogress|300|clock_user_freq.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0
